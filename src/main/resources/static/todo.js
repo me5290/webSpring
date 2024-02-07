@@ -2,7 +2,31 @@ console.log('todo js실행');
 
 // 1. 할일등록 함수
 function doPost(){
+    console.log('doPost()');
+    // 1. 입력받은 값
+    let content = document.querySelector('#content').value;
+    let deadline = document.querySelector('#deadline').value;
 
+    // 2. 객체화
+    let info={
+        content : content,
+        deadline : deadline
+    };
+    console.log(info)
+
+    // 3. 컨트롤에게 요청/응답
+        // HTTP통신 : 어디에(action/url) 어떻게(method/method) 보낼데이터(name/data) 응답데이터(x/success)
+    $.ajax({
+        url : '/todo/post.do',
+        method : 'post',
+        data : info,
+        success : function(result){
+            if(result == true){
+                doGet();
+            }
+        }
+    })
+    // 4. 출력
 }
 
 // 2. 할일목록출력 함수
