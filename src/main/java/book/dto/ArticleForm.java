@@ -12,6 +12,7 @@ import lombok.*;
 @Setter // 컴파일시 setter() 자동으로 만들어준다
 public class ArticleForm {
     // 1. 필드
+    private Long id;
     private String title;
     private String content;
 
