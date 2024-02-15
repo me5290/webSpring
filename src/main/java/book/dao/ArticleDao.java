@@ -147,4 +147,20 @@ public class ArticleDao {
         }
         return null;
     }
+
+    // 6. 삭제 처리 : 매개변수 삭제할id , 리턴 T/F
+    public boolean delete(Long id){
+        try {
+            String sql = "delete from article where id = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1,id);
+            int count = ps.executeUpdate();
+            if (count == 1){
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return false;
+    }
 }

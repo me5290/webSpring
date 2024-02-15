@@ -118,6 +118,17 @@ public class ArticleController {
         // 3. 수정 처리된 상세페이지로 이동
         return "redirect:/article/"+updated.getId();
     }
+
+    // 234P 삭제
+    @GetMapping("/article/{id}/delete")
+    public String delete(@PathVariable Long id){
+        System.out.println("삭제 요청이 들어왔습니다.");
+        // 1. 삭제할 대상 가져오기
+        // 2. Dao 삭제 요청하고 응답받기
+        boolean result = articleDao.delete(id);
+        // 3. 결과 페이지로 리다이렉트 하기
+        return "redirect:/article";
+    }
 }
 /*
     @ 어노테이션
