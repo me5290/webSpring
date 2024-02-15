@@ -22,7 +22,7 @@ public class ArticleDao {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // 2. 연동
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/springweb",
+                    "jdbc:mysql://localhost:3306/spring web",
                     "root",
                     "1234"
             );

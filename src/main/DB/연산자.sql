@@ -112,3 +112,70 @@ select * from member where mphone1 is not null;
 					1. 필드명 is null
 					2. 필드명 is not null
 */
+
+select 
+	5 + 10 as 더하기, 
+    5 -10 as 빼기, 
+    5 * 10 as 곱하기, 
+    5 / 10 as 나누기, 
+    5 div 3 as 몫,
+    5 mod 3 as 나머지,
+    5 = 5,
+    5 = 3,
+    5 != 3,
+    5 > 3,
+    5 < 3,
+    5 >= 3,
+    5 <= 3
+from dual;	# dual : 임시 테이블
+
+# 1. as 별칭 : 필드나 테이블에 별칭 넣어줌
+# 2. where 조건절
+# 3. order by 필드명 : 정렬
+	# 오름차순 : 1 2 3 4 , 과거 -> 최신 , a b c , ㄱ ㄴ ㄷ
+    # 1. order by 필드명 (asc) : 주어진 필드 기준으로 오름차순 (기본값)
+    # 2. order by 필드명 desc : 주어진 필드 기준으로 내림차순
+    # 3. 2개 이상의 정렬 : order by 필드명 정렬기준 , 필드명 정렬기준
+		# 앞 정렬된 데이터에서 동일한 데이터끼리 후정렬
+select * from member order by mdebut;
+select * from member order by mdebut asc;
+select * from member order by mdebut desc;
+select * from member order by mheight desc , mdebut asc;
+
+# 4. limit : 검색 레코드 수 제한
+	# 1. limit 레코드수
+	# 2. limit 시작 레코드수(0부터 시작) , 개수
+select * from member;
+select * from member limit 2;
+select * from member limit 0 , 3;
+	# 게시판의 페이징 처리 : 페이지당 5개씩이면 1페이지(0,5)
+select * from member limit 0 , 5;
+select * from member limit 5 , 5;
+select * from member order by mdebut desc limit 0 , 5; # 0부터 5개 날짜 내림차순으로 정렬
+select * from member order by mheight desc limit 3; # 키 상위 3명
+	# url : localhost:8080/board/(1-1)*5 , localhost:8080/board/1
+
+# where , order by , limit 같이 사용시 순서 정해져 있음
+select * from member where mheight >= 165 order by mheight desc limit 10;
+# 작성순서 : select 필드명 from 테이블명 where 조건절 order by 정렬필드명 asc/desc limit 시작,개수
+
+# 5. distinct : 중복제거
+select maddr from member;
+select distinct maddr from member;
+select distinct maddr , mname from member;
+select distinct maddr , mphone1 from member;
+
+# RDBMS : 관계형 데이터베이스
+	# 열과 행으로 구성된 테이블 : 검색 결과도 테이블 레코드 단위
+    
+/*
+	select : 검색 / 조회 /색인
+		select 필드명 , 필드명 from 테이블명
+        select * from 테이블명
+			1. where		: 조건절
+            2. order by		: 정렬
+            3. limit		: 레코드 검색 제한
+            - 작성 순서 : select 필드명 from 테이블명 where 조건절 order by 정렬필드명 asc/desc limit 시작(0),개수
+			4. as			: 별칭
+            5. distinct		: 필드 값 중복 제거
+*/
