@@ -32,7 +32,7 @@ public class ArticleController {
         // 2. 입력태그 속성의 name과 DTO 필드의 필드명이 일치하면 자동으로 연결된다
         // 3. public 생성자 필요
     @PostMapping("/article/create")
-    public boolean createArticle(ArticleForm form){
+    public String createArticle(ArticleForm form){
         System.out.println("ArticleController.createArticle");
         System.out.println("form = " + form);
 
@@ -49,9 +49,9 @@ public class ArticleController {
         log.info(form.toString());
 
         // DAO에게 응답받기
-        boolean result = articleDao.createArticle(form);
+        ArticleForm saved = articleDao.createArticle(form);
 
-        return result;
+        return "redirect:/article/"+saved.getId();
     }
 
     // 156P 조회
