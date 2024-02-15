@@ -108,4 +108,43 @@ public class ArticleDao {
         }
         return list;
     }
+
+    // 4. id를 해당하는 게시물 정보 호출 : 매개변수 id , 리턴 Dto
+    public ArticleForm findById(Long id){
+        try {
+            String sql="select * from article where id = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1,id);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                // 하나의 레코드를 Dto로 생성
+                return new ArticleForm(
+                        rs.getLong(1),
+                        rs.getString(2),
+                        rs.getString(3)
+                );
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return null;
+    }
+
+    // 5. 수정처리 : 매개변수 수정할pk수정할 값 , 리턴 Dto
+    public ArticleForm update(ArticleForm form){
+        try {
+            String sql = "update article set title = ? , content = ? where id = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, form.getTitle());
+            ps.setString(2, form.getContent());
+            ps.setLong(3, form.getId());
+            int count = ps.executeUpdate();
+            if (count == 1){
+                return form;
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return null;
+    }
 }

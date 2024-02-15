@@ -91,6 +91,33 @@ public class ArticleController {
         // 3. 뷰 페이지 설정
         return "article/index";
     }
+
+    // 203P 수정 1단계 : 기존 데이터 불러오기
+    @GetMapping("/article/{id}/edit")   // GetMapping 사용이유 : <a> 이용해서 호출하기 위해
+    public String edit(@PathVariable("id") Long id , Model model){
+        // 1. DAO에게 요청하고 응답 받는다
+        ArticleForm form = articleDao.findById(id);
+        // 2. 응답결과를 뷰 템플릿에게 보낼 준비 model
+        model.addAttribute("article",form);
+        // 3. 뷰 페이지 설정
+        return "article/edit";
+    }
+    // @PathVariable : 요청한 HTTP URL 경로상의 매개변수 대입 , 자동타입변환
+        // URL : /article/{매개변수명}/edit
+        // @PathVariable("URL매개변수명") 타입 매개변수명
+            // URL매개변수명 생략시 함수의 매개변수명과 일치할 경우 자동 대입
+
+    // 215P 수정 2단계 : 수정 데이터 받아오기
+    @PostMapping("/article/update")
+    public String update(ArticleForm form){
+        // - form 입력 데이터를 Dto 매개변수로 받을때
+            // 1. form 입력상자의 name과 Dto의 필드명이 동일
+            // 2. Dto의 필드값을 저장할 생성자 필요
+        // 2. Dao에게 요청하고 응답 받기
+        ArticleForm updated = articleDao.update(form);
+        // 3. 수정 처리된 상세페이지로 이동
+        return "redirect:/article/"+updated.getId();
+    }
 }
 /*
     @ 어노테이션
