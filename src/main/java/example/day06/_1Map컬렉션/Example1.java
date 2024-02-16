@@ -1,4 +1,4 @@
-package example.day06.Map컬렉션;
+package example.day06._1Map컬렉션;
 
 import java.util.*;
 
