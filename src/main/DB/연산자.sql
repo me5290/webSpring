@@ -23,7 +23,7 @@ create table buy(
     bpname char(6) not null ,         # 제품명      최대 6자리 
     bgname char(4) ,                # 분류명       최대   4자리
     bprice int not null ,            # 가격       정수 
-    bamout smallint not null ,         # 구매수량   정수 
+    bamount smallint not null ,         # 구매수량   정수 
     primary key(bnum) ,               # 제약조건 
     foreign key ( mid ) references member(mid) # 제약조건 
 );
@@ -165,9 +165,62 @@ select distinct maddr from member;
 select distinct maddr , mname from member;
 select distinct maddr , mphone1 from member;
 
+# 6.
+select bamount from buy;				# 검색
+select distinct bamount from buy;		# 중복제거 검색
+select bamount+5 from buy;				# 연산
+	# 1.sum(필드명) : 필드의 총합계
+select sum(bamount) from buy;
+	# 2. avg(필드명) : 필드의 평균
+select avg(bamount) from buy;
+	# 3. max(필드명) : 필드의 최댓값
+select max(bamount) from buy;
+	# 4. min(필드명) : 필드의 최솟값
+select min(bamount) from buy;
+	# 5. count(필드명) : 필드의 최솟값
+select count(bamount) from buy;
+select count(*) from buy;
+
+# 1. 총 판매수량 합계
+select sum(bamount) from buy;
+select mid from buy;
+
+# 2. 회원아이디 별로 판매수량 합계
+select sum(bamount) , mid from buy;
+
+#
+select mid from buy group by mid;	# mid 필드 그룹
+select distinct mid from buy;		# mid 필드 중복 제거
+
+#
+select mid as 구매자 , sum(bamount) as 총수량 from buy group by mid;
+select distinct mid , sum(bamount) from buy;
+
+# 3. 회원 아이디 별로 총매출액[판매가격 * 판매수량]
+	# 3-1 전체 총매출액
+select sum(bamount * bprice) from buy;
+select sum(bamount * bprice) as 총매출액 , mid 회원아이디 from buy group by mid;
+
+# 4. 회원 아이디 별(그룹)로 판매수량 평균
+	# 4-1 전체 판매수량 평균
+select avg(bamount) from buy;
+select avg(bamount) as 평균구매수량 , mid 구매자 from buy group by mid;
+
+# 5-1 구매자 명단
+select mid as 구매자 from buy;
+# 5-2 구매자 그룹
+select mid as 구매자 from buy group by mid;
+# 5-3 오류
+select mid , bamount as 구매자 from buy group by mid;
+
+# 6. 회원아이디 별로 총매출액이 1000이상 검색
+select mid 구매자 , sum(bamount * bprice) 총매출액 from buy group by mid having sum(bamount * bprice) >= 1000;
+
+# 구매수량이 3개 이상인 회원아이디 별로 총매출액이 1000이상 검색
+select mid 구매자 , sum(bamount * bprice) 총매출액 from buy where bamount >= 3 group by mid having sum(bamount * bprice) >= 1000;
+
 # RDBMS : 관계형 데이터베이스
 	# 열과 행으로 구성된 테이블 : 검색 결과도 테이블 레코드 단위
-    
 /*
 	select : 검색 / 조회 /색인
 		select 필드명 , 필드명 from 테이블명
@@ -178,4 +231,15 @@ select distinct maddr , mphone1 from member;
             - 작성 순서 : select 필드명 from 테이블명 where 조건절 order by 정렬필드명 asc/desc limit 시작(0),개수
 			4. as			: 별칭
             5. distinct		: 필드 값 중복 제거
+            
+	집계함수
+		1. sum(필드명) : 필드 합계
+		2. avg(필드명) : 필드 평균
+		3. max(필드명) : 필드 최댓값
+		4. min(필드명) : 필드 최솟값
+		5. count(필드명) : 필드 레코드 수 (null 제외)
+		   count(*) : 필드 레코드 수 (null 포함)
+           
+		전체 집계 : 그룹 필요 없음
+        특정 범위 집계 : 그룹 필요
 */

@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/js/todolist.js"></script>
+    <h2> ToDo.</h2>
+    <div>
+        내용 : <input type="text" id="content"/> <br/>
+        날짜 : <input type="date" id="date"/> <br/>
+        <button type="button" onclick="todoCreate()">등록</button>
+    </div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th> No. </th>
+            <th> Content </th>
+            <th> State </th>
+            <th> Date </th>
+            <th> 비고 </th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+
+
+
+        </tbody>
+    </table>
+</body>
+</html>
