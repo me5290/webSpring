@@ -1160,3 +1160,908 @@ java.lang.IllegalStateException: Optional int parameter 'no' is present but cann
 2024-02-21T11:43:30.113+09:00  INFO 5744 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-02-21T11:43:30.113+09:00  INFO 5744 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-02-21T11:43:30.114+09:00  INFO 5744 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T13:44:33.407+09:00  INFO 11028 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11028 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:44:33.410+09:00  INFO 11028 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:44:34.156+09:00  INFO 11028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:44:34.166+09:00  INFO 11028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:44:34.167+09:00  INFO 11028 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:44:34.218+09:00  INFO 11028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:44:34.218+09:00  INFO 11028 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 764 ms
+2024-02-21T13:44:34.717+09:00  INFO 11028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:44:34.723+09:00  INFO 11028 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.677 seconds (process running for 1.917)
+2024-02-21T13:44:59.437+09:00  INFO 1636 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 1636 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:44:59.440+09:00  INFO 1636 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:45:00.177+09:00  INFO 1636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:45:00.187+09:00  INFO 1636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:45:00.188+09:00  INFO 1636 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:45:00.237+09:00  INFO 1636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:45:00.237+09:00  INFO 1636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2024-02-21T13:45:00.739+09:00  INFO 1636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:45:00.745+09:00  INFO 1636 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.677 seconds (process running for 1.933)
+2024-02-21T13:45:15.143+09:00  INFO 1636 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:45:15.144+09:00  INFO 1636 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:45:15.144+09:00  INFO 1636 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T13:46:00.338+09:00  INFO 4996 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 4996 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:46:00.342+09:00  INFO 4996 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:46:01.069+09:00  INFO 4996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:46:01.077+09:00  INFO 4996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:46:01.078+09:00  INFO 4996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:46:01.132+09:00  INFO 4996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:46:01.132+09:00  INFO 4996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-02-21T13:46:01.625+09:00  INFO 4996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:46:01.632+09:00  INFO 4996 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.668 seconds (process running for 1.915)
+2024-02-21T13:46:05.302+09:00  INFO 4996 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:46:05.302+09:00  INFO 4996 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:46:05.302+09:00  INFO 4996 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T13:46:57.091+09:00 ERROR 4996 --- [http-nio-5290-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+
+java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:270) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:127) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:225) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-21T13:47:10.695+09:00 ERROR 4996 --- [http-nio-5290-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+
+java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:270) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:127) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:225) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-21T13:47:33.624+09:00 ERROR 4996 --- [http-nio-5290-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+
+java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:270) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:127) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:225) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-21T13:48:23.091+09:00  INFO 11116 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11116 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:48:23.096+09:00  INFO 11116 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:48:23.853+09:00  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:48:23.863+09:00  INFO 11116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:48:23.863+09:00  INFO 11116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:48:23.918+09:00  INFO 11116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:48:23.918+09:00  INFO 11116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2024-02-21T13:48:24.452+09:00  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:48:24.459+09:00  INFO 11116 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.723 seconds (process running for 1.993)
+2024-02-21T13:48:28.028+09:00  INFO 11116 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:48:28.028+09:00  INFO 11116 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:48:28.029+09:00  INFO 11116 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T13:48:28.065+09:00 ERROR 11116 --- [http-nio-5290-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+
+java.lang.IllegalStateException: Optional int parameter 'no' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:270) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:127) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:225) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-02-21T13:49:29.257+09:00  INFO 3504 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3504 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:49:29.259+09:00  INFO 3504 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:49:30.010+09:00  INFO 3504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:49:30.021+09:00  INFO 3504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:49:30.022+09:00  INFO 3504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:49:30.073+09:00  INFO 3504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:49:30.073+09:00  INFO 3504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2024-02-21T13:49:30.573+09:00  INFO 3504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:49:30.579+09:00  INFO 3504 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.707 seconds (process running for 1.954)
+2024-02-21T13:49:35.311+09:00  INFO 3504 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:49:35.311+09:00  INFO 3504 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:49:35.312+09:00  INFO 3504 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T13:54:46.220+09:00  INFO 6544 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 6544 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:54:46.223+09:00  INFO 6544 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:54:47.191+09:00  INFO 6544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:54:47.201+09:00  INFO 6544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:54:47.202+09:00  INFO 6544 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:54:47.257+09:00  INFO 6544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:54:47.257+09:00  INFO 6544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2024-02-21T13:54:47.761+09:00  INFO 6544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:54:47.769+09:00  INFO 6544 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 2.001 seconds (process running for 2.268)
+2024-02-21T13:54:56.026+09:00  INFO 6544 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:54:56.027+09:00  INFO 6544 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:54:56.027+09:00  INFO 6544 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T13:59:44.147+09:00  INFO 4512 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 4512 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T13:59:44.150+09:00  INFO 4512 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T13:59:44.888+09:00  INFO 4512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T13:59:44.900+09:00  INFO 4512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T13:59:44.900+09:00  INFO 4512 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T13:59:44.950+09:00  INFO 4512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T13:59:44.950+09:00  INFO 4512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-02-21T13:59:45.460+09:00  INFO 4512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T13:59:45.467+09:00  INFO 4512 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.695 seconds (process running for 1.947)
+2024-02-21T13:59:58.232+09:00  INFO 4512 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T13:59:58.232+09:00  INFO 4512 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T13:59:58.233+09:00  INFO 4512 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:00:37.108+09:00  INFO 9464 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9464 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:00:37.111+09:00  INFO 9464 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:00:37.879+09:00  INFO 9464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:00:37.891+09:00  INFO 9464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:00:37.891+09:00  INFO 9464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:00:37.945+09:00  INFO 9464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:00:37.946+09:00  INFO 9464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2024-02-21T14:00:38.444+09:00  INFO 9464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:00:38.451+09:00  INFO 9464 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.734 seconds (process running for 1.973)
+2024-02-21T14:00:40.940+09:00  INFO 9464 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:00:40.940+09:00  INFO 9464 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:00:40.940+09:00  INFO 9464 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:01:03.646+09:00  INFO 3876 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3876 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:01:03.649+09:00  INFO 3876 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:01:04.405+09:00  INFO 3876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:01:04.417+09:00  INFO 3876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:01:04.417+09:00  INFO 3876 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:01:04.469+09:00  INFO 3876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:01:04.469+09:00  INFO 3876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-02-21T14:01:04.965+09:00  INFO 3876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:01:04.970+09:00  INFO 3876 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.683 seconds (process running for 1.928)
+2024-02-21T14:01:06.993+09:00  INFO 3876 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:01:06.993+09:00  INFO 3876 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:01:06.994+09:00  INFO 3876 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:02:26.291+09:00  INFO 5504 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 5504 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:02:26.293+09:00  INFO 5504 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:02:27.083+09:00  INFO 5504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:02:27.093+09:00  INFO 5504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:02:27.094+09:00  INFO 5504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:02:27.148+09:00  INFO 5504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:02:27.149+09:00  INFO 5504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 798 ms
+2024-02-21T14:02:27.684+09:00  INFO 5504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:02:27.691+09:00  INFO 5504 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.799 seconds (process running for 2.032)
+2024-02-21T14:02:29.704+09:00  INFO 5504 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:02:29.704+09:00  INFO 5504 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:02:29.704+09:00  INFO 5504 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:02:58.206+09:00  INFO 3764 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3764 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:02:58.209+09:00  INFO 3764 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:02:58.991+09:00  INFO 3764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:02:59.001+09:00  INFO 3764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:02:59.001+09:00  INFO 3764 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:02:59.058+09:00  INFO 3764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:02:59.058+09:00  INFO 3764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 811 ms
+2024-02-21T14:02:59.570+09:00  INFO 3764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:02:59.576+09:00  INFO 3764 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.7 seconds (process running for 1.933)
+2024-02-21T14:03:01.627+09:00  INFO 3764 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:03:01.627+09:00  INFO 3764 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:03:01.628+09:00  INFO 3764 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:03:27.095+09:00  INFO 1172 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 1172 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:03:27.098+09:00  INFO 1172 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:03:27.834+09:00  INFO 1172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:03:27.845+09:00  INFO 1172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:03:27.845+09:00  INFO 1172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:03:27.901+09:00  INFO 1172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:03:27.901+09:00  INFO 1172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2024-02-21T14:03:28.390+09:00  INFO 1172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:03:28.397+09:00  INFO 1172 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.674 seconds (process running for 1.909)
+2024-02-21T14:03:30.571+09:00  INFO 1172 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:03:30.573+09:00  INFO 1172 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:03:30.573+09:00  INFO 1172 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:03:59.649+09:00  INFO 8276 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8276 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:03:59.652+09:00  INFO 8276 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:04:00.392+09:00  INFO 8276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:04:00.402+09:00  INFO 8276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:04:00.403+09:00  INFO 8276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:04:00.453+09:00  INFO 8276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:04:00.453+09:00  INFO 8276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-02-21T14:04:00.976+09:00  INFO 8276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:04:00.982+09:00  INFO 8276 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.707 seconds (process running for 1.953)
+2024-02-21T14:04:02.972+09:00  INFO 8276 --- [http-nio-5290-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:04:02.972+09:00  INFO 8276 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:04:02.973+09:00  INFO 8276 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:04:18.825+09:00  INFO 9152 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9152 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:04:18.827+09:00  INFO 9152 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:04:19.593+09:00  INFO 9152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:04:19.602+09:00  INFO 9152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:04:19.602+09:00  INFO 9152 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:04:19.658+09:00  INFO 9152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:04:19.659+09:00  INFO 9152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 787 ms
+2024-02-21T14:04:20.159+09:00  INFO 9152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:04:20.167+09:00  INFO 9152 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.712 seconds (process running for 1.957)
+2024-02-21T14:04:22.063+09:00  INFO 9152 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:04:22.064+09:00  INFO 9152 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:04:22.064+09:00  INFO 9152 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:04:39.903+09:00  INFO 9024 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9024 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:04:39.905+09:00  INFO 9024 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:04:40.657+09:00  INFO 9024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:04:40.667+09:00  INFO 9024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:04:40.667+09:00  INFO 9024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:04:40.718+09:00  INFO 9024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:04:40.718+09:00  INFO 9024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-02-21T14:04:41.268+09:00  INFO 9024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:04:41.276+09:00  INFO 9024 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.745 seconds (process running for 1.977)
+2024-02-21T14:04:43.446+09:00  INFO 9024 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:04:43.447+09:00  INFO 9024 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:04:43.448+09:00  INFO 9024 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:07:08.773+09:00  INFO 2100 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 2100 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:07:08.776+09:00  INFO 2100 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:07:09.529+09:00  INFO 2100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:07:09.539+09:00  INFO 2100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:07:09.539+09:00  INFO 2100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:07:09.589+09:00  INFO 2100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:07:09.589+09:00  INFO 2100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-02-21T14:07:10.072+09:00  INFO 2100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:07:10.079+09:00  INFO 2100 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.681 seconds (process running for 1.946)
+2024-02-21T14:07:10.332+09:00  INFO 2100 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:07:10.332+09:00  INFO 2100 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:07:10.333+09:00  INFO 2100 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:08:01.747+09:00  INFO 8016 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8016 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:08:01.750+09:00  INFO 8016 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:08:02.508+09:00  INFO 8016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:08:02.519+09:00  INFO 8016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:08:02.519+09:00  INFO 8016 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:08:02.570+09:00  INFO 8016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:08:02.570+09:00  INFO 8016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2024-02-21T14:08:03.066+09:00  INFO 8016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:08:03.073+09:00  INFO 8016 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.698 seconds (process running for 1.957)
+2024-02-21T14:08:11.039+09:00  INFO 8016 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:08:11.040+09:00  INFO 8016 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:08:11.040+09:00  INFO 8016 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:08:54.819+09:00  INFO 10888 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 10888 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:08:54.822+09:00  INFO 10888 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:08:55.559+09:00  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:08:55.570+09:00  INFO 10888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:08:55.570+09:00  INFO 10888 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:08:55.624+09:00  INFO 10888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:08:55.624+09:00  INFO 10888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-02-21T14:08:56.133+09:00  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:08:56.139+09:00  INFO 10888 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.697 seconds (process running for 1.928)
+2024-02-21T14:08:58.079+09:00  INFO 10888 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:08:58.079+09:00  INFO 10888 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:08:58.080+09:00  INFO 10888 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:09:11.540+09:00  INFO 11060 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11060 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:09:11.542+09:00  INFO 11060 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:09:12.280+09:00  INFO 11060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:09:12.290+09:00  INFO 11060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:09:12.290+09:00  INFO 11060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:09:12.346+09:00  INFO 11060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:09:12.346+09:00  INFO 11060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2024-02-21T14:09:12.877+09:00  INFO 11060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:09:12.885+09:00  INFO 11060 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.732 seconds (process running for 1.968)
+2024-02-21T14:09:14.934+09:00  INFO 11060 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:09:14.935+09:00  INFO 11060 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:09:14.935+09:00  INFO 11060 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:09:35.872+09:00  INFO 3052 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3052 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:09:35.874+09:00  INFO 3052 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:09:36.638+09:00  INFO 3052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:09:36.649+09:00  INFO 3052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:09:36.649+09:00  INFO 3052 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:09:36.697+09:00  INFO 3052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:09:36.698+09:00  INFO 3052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-02-21T14:09:37.195+09:00  INFO 3052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:09:37.201+09:00  INFO 3052 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.724 seconds (process running for 1.996)
+2024-02-21T14:09:38.881+09:00  INFO 3052 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:09:38.881+09:00  INFO 3052 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:09:38.881+09:00  INFO 3052 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:10:46.319+09:00  INFO 7920 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 7920 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:10:46.321+09:00  INFO 7920 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:10:47.075+09:00  INFO 7920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:10:47.085+09:00  INFO 7920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:10:47.085+09:00  INFO 7920 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:10:47.141+09:00  INFO 7920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:10:47.142+09:00  INFO 7920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2024-02-21T14:10:47.637+09:00  INFO 7920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:10:47.644+09:00  INFO 7920 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.696 seconds (process running for 1.945)
+2024-02-21T14:10:49.500+09:00  INFO 7920 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:10:49.501+09:00  INFO 7920 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:10:49.501+09:00  INFO 7920 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:11:02.284+09:00  INFO 4012 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 4012 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:11:02.286+09:00  INFO 4012 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:11:03.051+09:00  INFO 4012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:11:03.062+09:00  INFO 4012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:11:03.063+09:00  INFO 4012 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:11:03.114+09:00  INFO 4012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:11:03.114+09:00  INFO 4012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2024-02-21T14:11:03.619+09:00  INFO 4012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:11:03.627+09:00  INFO 4012 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.704 seconds (process running for 1.944)
+2024-02-21T14:11:05.590+09:00  INFO 4012 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:11:05.590+09:00  INFO 4012 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:11:05.591+09:00  INFO 4012 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:11:23.089+09:00  INFO 8696 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8696 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:11:23.092+09:00  INFO 8696 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:11:23.845+09:00  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:11:23.855+09:00  INFO 8696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:11:23.856+09:00  INFO 8696 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:11:23.912+09:00  INFO 8696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:11:23.912+09:00  INFO 8696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2024-02-21T14:11:24.472+09:00  INFO 8696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:11:24.479+09:00  INFO 8696 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.741 seconds (process running for 1.976)
+2024-02-21T14:11:26.025+09:00  INFO 8696 --- [http-nio-5290-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:11:26.025+09:00  INFO 8696 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:11:26.026+09:00  INFO 8696 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:12:09.753+09:00  INFO 8092 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8092 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:12:09.757+09:00  INFO 8092 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:12:10.514+09:00  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:12:10.523+09:00  INFO 8092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:12:10.524+09:00  INFO 8092 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:12:10.573+09:00  INFO 8092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:12:10.574+09:00  INFO 8092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2024-02-21T14:12:11.086+09:00  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:12:11.097+09:00  INFO 8092 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.751 seconds (process running for 1.997)
+2024-02-21T14:12:12.792+09:00  INFO 8092 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:12:12.793+09:00  INFO 8092 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:12:12.794+09:00  INFO 8092 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:12:18.850+09:00  INFO 10496 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 10496 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:12:18.852+09:00  INFO 10496 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:12:19.605+09:00  INFO 10496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:12:19.614+09:00  INFO 10496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:12:19.615+09:00  INFO 10496 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:12:19.663+09:00  INFO 10496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:12:19.663+09:00  INFO 10496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2024-02-21T14:12:20.168+09:00  INFO 10496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:12:20.174+09:00  INFO 10496 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.686 seconds (process running for 1.951)
+2024-02-21T14:13:03.022+09:00  INFO 10496 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:13:03.023+09:00  INFO 10496 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:13:03.023+09:00  INFO 10496 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:13:15.143+09:00  INFO 9412 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9412 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:13:15.145+09:00  INFO 9412 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:13:15.901+09:00  INFO 9412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:13:15.911+09:00  INFO 9412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:13:15.911+09:00  INFO 9412 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:13:15.965+09:00  INFO 9412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:13:15.966+09:00  INFO 9412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 774 ms
+2024-02-21T14:13:16.461+09:00  INFO 9412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:13:16.468+09:00  INFO 9412 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.703 seconds (process running for 1.954)
+2024-02-21T14:13:18.213+09:00  INFO 9412 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:13:18.213+09:00  INFO 9412 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:13:18.214+09:00  INFO 9412 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:13:50.715+09:00  INFO 10736 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 10736 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:13:50.717+09:00  INFO 10736 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:13:51.492+09:00  INFO 10736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:13:51.502+09:00  INFO 10736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:13:51.502+09:00  INFO 10736 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:13:51.554+09:00  INFO 10736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:13:51.554+09:00  INFO 10736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2024-02-21T14:13:52.064+09:00  INFO 10736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:13:52.071+09:00  INFO 10736 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.727 seconds (process running for 1.959)
+2024-02-21T14:13:53.575+09:00  INFO 10736 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:13:53.575+09:00  INFO 10736 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:13:53.576+09:00  INFO 10736 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:14:07.949+09:00  INFO 4004 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 4004 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:14:07.953+09:00  INFO 4004 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:14:08.719+09:00  INFO 4004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:14:08.730+09:00  INFO 4004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:14:08.730+09:00  INFO 4004 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:14:08.780+09:00  INFO 4004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:14:08.781+09:00  INFO 4004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 792 ms
+2024-02-21T14:14:09.290+09:00  INFO 4004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:14:09.296+09:00  INFO 4004 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.712 seconds (process running for 1.953)
+2024-02-21T14:14:11.297+09:00  INFO 4004 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:14:11.298+09:00  INFO 4004 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:14:11.298+09:00  INFO 4004 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:14:46.254+09:00  INFO 11888 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11888 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:14:46.256+09:00  INFO 11888 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:14:47.105+09:00  INFO 11888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:14:47.114+09:00  INFO 11888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:14:47.114+09:00  INFO 11888 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:14:47.167+09:00  INFO 11888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:14:47.167+09:00  INFO 11888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 875 ms
+2024-02-21T14:14:47.703+09:00  INFO 11888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:14:47.710+09:00  INFO 11888 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.811 seconds (process running for 2.058)
+2024-02-21T14:14:50.078+09:00  INFO 11888 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:14:50.079+09:00  INFO 11888 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:14:50.079+09:00  INFO 11888 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T14:43:17.575+09:00  INFO 8520 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8520 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:43:17.577+09:00  INFO 8520 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:43:18.395+09:00  INFO 8520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:43:18.404+09:00  INFO 8520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:43:18.405+09:00  INFO 8520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:43:18.456+09:00  INFO 8520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:43:18.457+09:00  INFO 8520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2024-02-21T14:43:18.983+09:00  INFO 8520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:43:18.990+09:00  INFO 8520 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.792 seconds (process running for 2.051)
+2024-02-21T14:43:59.816+09:00  INFO 8520 --- [http-nio-5290-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:43:59.816+09:00  INFO 8520 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:43:59.817+09:00  INFO 8520 --- [http-nio-5290-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:49:51.073+09:00  INFO 11852 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11852 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:49:51.077+09:00  INFO 11852 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:49:51.902+09:00  INFO 11852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:49:51.912+09:00  INFO 11852 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:49:51.913+09:00  INFO 11852 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:49:51.971+09:00  INFO 11852 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:49:51.971+09:00  INFO 11852 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 820 ms
+2024-02-21T14:49:52.453+09:00  INFO 11852 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:49:52.460+09:00  INFO 11852 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.774 seconds (process running for 2.005)
+2024-02-21T14:50:37.510+09:00  INFO 11852 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:50:37.510+09:00  INFO 11852 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:50:37.511+09:00  INFO 11852 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T14:52:13.910+09:00  INFO 13016 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 13016 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T14:52:13.917+09:00  INFO 13016 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T14:52:14.645+09:00  INFO 13016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T14:52:14.655+09:00  INFO 13016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T14:52:14.655+09:00  INFO 13016 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T14:52:14.707+09:00  INFO 13016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T14:52:14.707+09:00  INFO 13016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2024-02-21T14:52:15.197+09:00  INFO 13016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T14:52:15.204+09:00  INFO 13016 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.646 seconds (process running for 1.887)
+2024-02-21T14:52:20.739+09:00  INFO 13016 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T14:52:20.739+09:00  INFO 13016 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T14:52:20.740+09:00  INFO 13016 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:03:14.546+09:00  INFO 6300 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 6300 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:03:14.548+09:00  INFO 6300 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:03:15.270+09:00  INFO 6300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:03:15.281+09:00  INFO 6300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:03:15.281+09:00  INFO 6300 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:03:15.335+09:00  INFO 6300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:03:15.336+09:00  INFO 6300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2024-02-21T15:03:15.826+09:00  INFO 6300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:03:15.833+09:00  INFO 6300 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.679 seconds (process running for 1.955)
+2024-02-21T15:03:18.954+09:00  INFO 6300 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:03:18.954+09:00  INFO 6300 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:03:18.954+09:00  INFO 6300 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:04:18.746+09:00  INFO 7996 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 7996 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:04:18.748+09:00  INFO 7996 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:04:19.485+09:00  INFO 7996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:04:19.495+09:00  INFO 7996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:04:19.496+09:00  INFO 7996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:04:19.549+09:00  INFO 7996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:04:19.549+09:00  INFO 7996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2024-02-21T15:04:20.038+09:00  INFO 7996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:04:20.045+09:00  INFO 7996 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.685 seconds (process running for 1.939)
+2024-02-21T15:04:23.170+09:00  INFO 7996 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:04:23.170+09:00  INFO 7996 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:04:23.171+09:00  INFO 7996 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:05:10.408+09:00  INFO 10224 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 10224 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:05:10.410+09:00  INFO 10224 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:05:11.136+09:00  INFO 10224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:05:11.146+09:00  INFO 10224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:05:11.146+09:00  INFO 10224 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:05:11.199+09:00  INFO 10224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:05:11.199+09:00  INFO 10224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2024-02-21T15:05:11.706+09:00  INFO 10224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:05:11.713+09:00  INFO 10224 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.666 seconds (process running for 1.937)
+2024-02-21T15:05:14.395+09:00  INFO 10224 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:05:14.395+09:00  INFO 10224 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:05:14.396+09:00  INFO 10224 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:05:54.650+09:00  INFO 9596 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9596 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:05:54.656+09:00  INFO 9596 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:05:55.417+09:00  INFO 9596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:05:55.429+09:00  INFO 9596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:05:55.429+09:00  INFO 9596 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:05:55.484+09:00  INFO 9596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:05:55.484+09:00  INFO 9596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2024-02-21T15:05:55.969+09:00  INFO 9596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:05:55.976+09:00  INFO 9596 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.68 seconds (process running for 1.936)
+2024-02-21T15:05:58.733+09:00  INFO 9596 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:05:58.733+09:00  INFO 9596 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:05:58.734+09:00  INFO 9596 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:05:59.974+09:00  WARN 9596 --- [http-nio-5290-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:07:52.042+09:00  WARN 9596 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:08:44.747+09:00  INFO 7080 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 7080 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:08:44.749+09:00  INFO 7080 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:08:45.473+09:00  INFO 7080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:08:45.484+09:00  INFO 7080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:08:45.484+09:00  INFO 7080 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:08:45.539+09:00  INFO 7080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:08:45.540+09:00  INFO 7080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2024-02-21T15:08:46.027+09:00  INFO 7080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:08:46.034+09:00  INFO 7080 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.637 seconds (process running for 1.908)
+2024-02-21T15:08:48.258+09:00  INFO 7080 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:08:48.258+09:00  INFO 7080 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:08:48.259+09:00  INFO 7080 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:08:52.808+09:00  WARN 7080 --- [http-nio-5290-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:12:18.928+09:00  INFO 9448 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9448 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:12:18.930+09:00  INFO 9448 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:12:19.679+09:00  INFO 9448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:12:19.689+09:00  INFO 9448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:12:19.689+09:00  INFO 9448 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:12:19.744+09:00  INFO 9448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:12:19.745+09:00  INFO 9448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
+2024-02-21T15:12:20.232+09:00  INFO 9448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:12:20.239+09:00  INFO 9448 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.671 seconds (process running for 1.902)
+2024-02-21T15:12:24.514+09:00  INFO 9448 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:12:24.514+09:00  INFO 9448 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:12:24.515+09:00  INFO 9448 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:12:25.223+09:00  WARN 9448 --- [http-nio-5290-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:13:39.503+09:00  INFO 11928 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11928 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:13:39.505+09:00  INFO 11928 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:13:40.233+09:00  INFO 11928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:13:40.243+09:00  INFO 11928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:13:40.244+09:00  INFO 11928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:13:40.297+09:00  INFO 11928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:13:40.297+09:00  INFO 11928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 754 ms
+2024-02-21T15:13:40.796+09:00  INFO 11928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:13:40.802+09:00  INFO 11928 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.673 seconds (process running for 1.914)
+2024-02-21T15:13:43.257+09:00  INFO 11928 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:13:43.257+09:00  INFO 11928 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:13:43.258+09:00  INFO 11928 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:13:43.948+09:00  WARN 11928 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:13:52.097+09:00  WARN 11928 --- [http-nio-5290-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:14:43.294+09:00  INFO 8472 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8472 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:14:43.297+09:00  INFO 8472 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:14:44.063+09:00  INFO 8472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:14:44.073+09:00  INFO 8472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:14:44.074+09:00  INFO 8472 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:14:44.124+09:00  INFO 8472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:14:44.124+09:00  INFO 8472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-02-21T15:14:44.624+09:00  INFO 8472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:14:44.631+09:00  INFO 8472 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.728 seconds (process running for 1.968)
+2024-02-21T15:14:46.596+09:00  INFO 8472 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:14:46.597+09:00  INFO 8472 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:14:46.597+09:00  INFO 8472 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:14:47.380+09:00  WARN 8472 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:14:57.186+09:00  WARN 8472 --- [http-nio-5290-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:15:01.913+09:00  WARN 8472 --- [http-nio-5290-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:15:21.093+09:00  INFO 3536 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3536 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:15:21.095+09:00  INFO 3536 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:15:21.844+09:00  INFO 3536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:15:21.855+09:00  INFO 3536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:15:21.856+09:00  INFO 3536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:15:21.907+09:00  INFO 3536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:15:21.908+09:00  INFO 3536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 778 ms
+2024-02-21T15:15:22.446+09:00  INFO 3536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:15:22.452+09:00  INFO 3536 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.712 seconds (process running for 1.952)
+2024-02-21T15:15:24.571+09:00  INFO 3536 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:15:24.571+09:00  INFO 3536 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:15:24.571+09:00  INFO 3536 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:15:25.932+09:00  WARN 3536 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:18:46.502+09:00  INFO 5612 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 5612 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:18:46.503+09:00  INFO 5612 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:18:47.251+09:00  INFO 5612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:18:47.261+09:00  INFO 5612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:18:47.262+09:00  INFO 5612 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:18:47.311+09:00  INFO 5612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:18:47.312+09:00  INFO 5612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 773 ms
+2024-02-21T15:18:48.109+09:00  INFO 5612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:18:48.120+09:00  INFO 5612 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.988 seconds (process running for 2.252)
+2024-02-21T15:18:50.851+09:00  INFO 5612 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:18:50.851+09:00  INFO 5612 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:18:50.852+09:00  INFO 5612 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:18:51.452+09:00  WARN 5612 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:18:54.849+09:00  WARN 5612 --- [http-nio-5290-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:20:15.593+09:00  INFO 8288 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8288 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:20:15.595+09:00  INFO 8288 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:20:16.378+09:00  INFO 8288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:20:16.388+09:00  INFO 8288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:20:16.388+09:00  INFO 8288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:20:16.442+09:00  INFO 8288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:20:16.442+09:00  INFO 8288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2024-02-21T15:20:16.936+09:00  INFO 8288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:20:16.943+09:00  INFO 8288 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.691 seconds (process running for 1.938)
+2024-02-21T15:20:19.837+09:00  INFO 8288 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:20:19.837+09:00  INFO 8288 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:20:19.838+09:00  INFO 8288 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:20:25.543+09:00  WARN 8288 --- [http-nio-5290-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:20:28.833+09:00  WARN 8288 --- [http-nio-5290-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:21:20.467+09:00  INFO 9920 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 9920 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:21:20.469+09:00  INFO 9920 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:21:21.215+09:00  INFO 9920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:21:21.225+09:00  INFO 9920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:21:21.225+09:00  INFO 9920 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:21:21.275+09:00  INFO 9920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:21:21.276+09:00  INFO 9920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-02-21T15:21:21.766+09:00  INFO 9920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:21:21.772+09:00  INFO 9920 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.654 seconds (process running for 1.922)
+2024-02-21T15:21:24.397+09:00  INFO 9920 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:21:24.397+09:00  INFO 9920 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:21:24.398+09:00  INFO 9920 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:21:25.234+09:00  WARN 9920 --- [http-nio-5290-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:21:27.945+09:00  WARN 9920 --- [http-nio-5290-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:22:08.785+09:00  WARN 9920 --- [http-nio-5290-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:22:13.178+09:00  WARN 9920 --- [http-nio-5290-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:23:51.252+09:00  INFO 6320 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 6320 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:23:51.254+09:00  INFO 6320 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:23:52.009+09:00  INFO 6320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:23:52.019+09:00  INFO 6320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:23:52.020+09:00  INFO 6320 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:23:52.068+09:00  INFO 6320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:23:52.069+09:00  INFO 6320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-02-21T15:23:52.550+09:00  INFO 6320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:23:52.557+09:00  INFO 6320 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.687 seconds (process running for 1.956)
+2024-02-21T15:23:55.753+09:00  INFO 6320 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:23:55.753+09:00  INFO 6320 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:23:55.754+09:00  INFO 6320 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:23:58.281+09:00  WARN 6320 --- [http-nio-5290-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:24:03.091+09:00  WARN 6320 --- [http-nio-5290-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:24:43.448+09:00  WARN 6320 --- [http-nio-5290-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:25:22.185+09:00  INFO 7200 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 7200 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:25:22.187+09:00  INFO 7200 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:25:22.960+09:00  INFO 7200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:25:22.969+09:00  INFO 7200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:25:22.969+09:00  INFO 7200 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:25:23.017+09:00  INFO 7200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:25:23.018+09:00  INFO 7200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2024-02-21T15:25:23.515+09:00  INFO 7200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:25:23.521+09:00  INFO 7200 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.702 seconds (process running for 1.949)
+2024-02-21T15:25:25.459+09:00  INFO 7200 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:25:25.459+09:00  INFO 7200 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:25:25.460+09:00  INFO 7200 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:26:03.159+09:00  INFO 13860 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 13860 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:26:03.161+09:00  INFO 13860 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:26:03.900+09:00  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:26:03.910+09:00  INFO 13860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:26:03.910+09:00  INFO 13860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:26:03.965+09:00  INFO 13860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:26:03.965+09:00  INFO 13860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2024-02-21T15:26:04.454+09:00  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:26:04.461+09:00  INFO 13860 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.68 seconds (process running for 1.954)
+2024-02-21T15:26:06.862+09:00  INFO 13860 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:26:06.862+09:00  INFO 13860 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:26:06.863+09:00  INFO 13860 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:26:18.250+09:00  WARN 13860 --- [http-nio-5290-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:27:02.140+09:00  INFO 8272 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 8272 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:27:02.142+09:00  INFO 8272 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:27:02.875+09:00  INFO 8272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:27:02.885+09:00  INFO 8272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:27:02.885+09:00  INFO 8272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:27:02.933+09:00  INFO 8272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:27:02.933+09:00  INFO 8272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-02-21T15:27:03.425+09:00  INFO 8272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:27:03.432+09:00  INFO 8272 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.663 seconds (process running for 1.891)
+2024-02-21T15:27:06.580+09:00  INFO 8272 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:27:06.581+09:00  INFO 8272 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:27:06.581+09:00  INFO 8272 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:27:14.357+09:00  WARN 8272 --- [http-nio-5290-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:27:32.857+09:00  INFO 13800 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 13800 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:27:32.859+09:00  INFO 13800 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:27:33.601+09:00  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:27:33.612+09:00  INFO 13800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:27:33.612+09:00  INFO 13800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:27:33.661+09:00  INFO 13800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:27:33.661+09:00  INFO 13800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2024-02-21T15:27:34.137+09:00  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:27:34.144+09:00  INFO 13800 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.679 seconds (process running for 1.925)
+2024-02-21T15:27:36.455+09:00  INFO 13800 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:27:36.456+09:00  INFO 13800 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:27:36.456+09:00  INFO 13800 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:30:49.592+09:00  INFO 3992 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3992 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:30:49.594+09:00  INFO 3992 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:30:50.360+09:00  INFO 3992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:30:50.370+09:00  INFO 3992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:30:50.370+09:00  INFO 3992 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:30:50.420+09:00  INFO 3992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:30:50.420+09:00  INFO 3992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2024-02-21T15:30:50.902+09:00  INFO 3992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:30:50.908+09:00  INFO 3992 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.68 seconds (process running for 1.929)
+2024-02-21T15:30:51.348+09:00  INFO 3992 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:30:51.348+09:00  INFO 3992 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:30:51.349+09:00  INFO 3992 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:34:51.418+09:00  INFO 13692 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 13692 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:34:51.420+09:00  INFO 13692 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:34:52.193+09:00  INFO 13692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:34:52.202+09:00  INFO 13692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:34:52.202+09:00  INFO 13692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:34:52.252+09:00  INFO 13692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:34:52.252+09:00  INFO 13692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2024-02-21T15:34:52.806+09:00  INFO 13692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:34:52.812+09:00  INFO 13692 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.737 seconds (process running for 1.986)
+2024-02-21T15:34:55.398+09:00  INFO 13692 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:34:55.398+09:00  INFO 13692 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:34:55.399+09:00  INFO 13692 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:35:03.893+09:00  WARN 13692 --- [http-nio-5290-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "undefined"]
+2024-02-21T15:35:58.429+09:00  INFO 11924 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 11924 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:35:58.431+09:00  INFO 11924 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:35:59.170+09:00  INFO 11924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:35:59.181+09:00  INFO 11924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:35:59.181+09:00  INFO 11924 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:35:59.234+09:00  INFO 11924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:35:59.234+09:00  INFO 11924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 765 ms
+2024-02-21T15:35:59.730+09:00  INFO 11924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:35:59.737+09:00  INFO 11924 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.685 seconds (process running for 1.943)
+2024-02-21T15:36:03.557+09:00  INFO 11924 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:36:03.558+09:00  INFO 11924 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:36:03.558+09:00  INFO 11924 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-21T15:39:44.988+09:00  INFO 6352 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 6352 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:39:44.990+09:00  INFO 6352 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:39:45.748+09:00  INFO 6352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:39:45.757+09:00  INFO 6352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:39:45.758+09:00  INFO 6352 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:39:45.808+09:00  INFO 6352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:39:45.808+09:00  INFO 6352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2024-02-21T15:39:46.306+09:00  INFO 6352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:39:46.313+09:00  INFO 6352 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.69 seconds (process running for 1.936)
+2024-02-21T15:39:48.087+09:00  INFO 6352 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:39:48.087+09:00  INFO 6352 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:39:48.088+09:00  INFO 6352 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:41:33.290+09:00  INFO 3832 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 3832 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:41:33.293+09:00  INFO 3832 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:41:34.154+09:00  INFO 3832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:41:34.164+09:00  INFO 3832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:41:34.165+09:00  INFO 3832 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:41:34.214+09:00  INFO 3832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:41:34.214+09:00  INFO 3832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms
+2024-02-21T15:41:34.701+09:00  INFO 3832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:41:34.707+09:00  INFO 3832 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.823 seconds (process running for 2.096)
+2024-02-21T15:41:36.837+09:00  INFO 3832 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:41:36.837+09:00  INFO 3832 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:41:36.838+09:00  INFO 3832 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:42:15.657+09:00  INFO 2388 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 2388 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:42:15.659+09:00  INFO 2388 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:42:16.403+09:00  INFO 2388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:42:16.414+09:00  INFO 2388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:42:16.414+09:00  INFO 2388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:42:16.469+09:00  INFO 2388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:42:16.469+09:00  INFO 2388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2024-02-21T15:42:16.967+09:00  INFO 2388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:42:16.974+09:00  INFO 2388 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.688 seconds (process running for 1.934)
+2024-02-21T15:42:18.557+09:00  INFO 2388 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:42:18.557+09:00  INFO 2388 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:42:18.558+09:00  INFO 2388 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-21T15:42:47.632+09:00  INFO 2236 --- [main] example.day09._3인과제3.EmStart             : Starting EmStart using Java 17.0.9 with PID 2236 (C:\Users\504\Desktop\webSpring\build\classes\java\main started by 504 in C:\Users\504\Desktop\webSpring)
+2024-02-21T15:42:47.634+09:00  INFO 2236 --- [main] example.day09._3인과제3.EmStart             : No active profile set, falling back to 1 default profile: "default"
+2024-02-21T15:42:48.385+09:00  INFO 2236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5290 (http)
+2024-02-21T15:42:48.398+09:00  INFO 2236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-21T15:42:48.398+09:00  INFO 2236 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-21T15:42:48.450+09:00  INFO 2236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-21T15:42:48.450+09:00  INFO 2236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 764 ms
+2024-02-21T15:42:48.940+09:00  INFO 2236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 5290 (http) with context path ''
+2024-02-21T15:42:48.946+09:00  INFO 2236 --- [main] example.day09._3인과제3.EmStart             : Started EmStart in 1.699 seconds (process running for 1.955)
+2024-02-21T15:42:50.962+09:00  INFO 2236 --- [http-nio-5290-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-21T15:42:50.962+09:00  INFO 2236 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-21T15:42:50.962+09:00  INFO 2236 --- [http-nio-5290-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
