@@ -44,7 +44,8 @@ public class Dao {
                 Dto dto = new Dto(
                         rs.getInt("no"),
                         rs.getString("content"),
-                        rs.getString("date")
+                        rs.getString("date"),
+                        rs.getBoolean("state")
                 );
                 dtos.add(dto);
             }
@@ -71,13 +72,43 @@ public class Dao {
         return false;
     }
 
+    public boolean stateList(int no){
+        try {
+            String sql = "select state from todolist where no = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1,no);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                if(rs.getBoolean("state")==false){
+                    String stateT = "update todolist set state = ? where no = ?";
+                    ps = conn.prepareStatement(stateT);
+                    ps.setBoolean(1,true);
+                    ps.setInt(2,no);
+                    ps.executeUpdate();
+                }else if(rs.getBoolean("state")==true){
+                    String stateF = "update todolist set state = ? where no = ?";
+                    ps = conn.prepareStatement(stateF);
+                    ps.setBoolean(1,false);
+                    ps.setInt(2,no);
+                    ps.executeUpdate();
+                }
+            }
+            return true;
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        System.out.println("다오 상태 실패");
+        return false;
+    }
+
     public boolean updateList(Dto dto){
         try {
-            String sql = "update todolist set content = ? , date = ?";
+            String sql = "update todolist set content = ? , date = ? where no = ?";
 
             ps = conn.prepareStatement(sql);
             ps.setString(1,dto.getContent());
             ps.setString(2,dto.getDate());
+            ps.setInt(3,dto.getNo());
             int count = ps.executeUpdate();
             if(count == 1){
                 return true;
@@ -85,6 +116,8 @@ public class Dao {
         }catch (Exception e){
             System.out.println(e);
         }
+        System.out.println("다오 수정 실패");
+        System.out.println(dto);
         return false;
     }
 
@@ -100,6 +133,7 @@ public class Dao {
         }catch (Exception e){
             System.out.println(e);
         }
+        System.out.println("다오 삭제 실패");
         return false;
     }
 }
