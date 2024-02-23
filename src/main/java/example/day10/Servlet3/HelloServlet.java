@@ -16,6 +16,7 @@ import java.io.IOException;
         1. 해당 클래스에 HttpServlet 상속받는다
         2. 해당 클래스에 @WebServlet("HTTP식별주소") 어노테이션 주입해서 web.xml에 등록
         3. HttpServlet가 제공하는 메소드를 오버라이딩 : init,service,doGet,doPost,destroy
+        *
 
     - 서블릿 실행 구동 순서
         1. 클라이언트(브라우저) HTTP 요청이 (WAS(톰캣서버))들어온다
