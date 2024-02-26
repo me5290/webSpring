@@ -54,6 +54,7 @@ function signup(){
     */
 }
 
+// 2. 로그인
 function login(){
     console.log('login()');
 
@@ -80,6 +81,7 @@ function login(){
             // 4. 결과
             if(result){
                 alert('로그인 성공');
+                location.href="/";      // 로그인 성공시 메인페이지로 이동
             }else{
                 alert('로그인 실패');
             }
