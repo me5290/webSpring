@@ -29,7 +29,7 @@ create table member(
     name varchar(20) not null,					-- 회원 이름
     email varchar(50),							-- 회원 이메일
     phone varchar(13) not null unique,			-- 회원 전화번호
-    img text,									-- 프로필 사진 경로
+    img varchar(255) default 'default.jpg',		-- 프로필 사진 경로
     constraint member_no_pk primary key(no)		-- 회원 번호 pk
 );
 select * from member;

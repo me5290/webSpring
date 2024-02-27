@@ -11,6 +11,10 @@
     font-family: 'Ownglyph_meetme-Rg';
     font-size: 18px;
 }
+a{
+    text-decoration: none;
+    color: #111;
+}
 #topMenu{
     display: flex;
     justify-content: space-between;
@@ -26,8 +30,53 @@
     margin-right: 70px;
 }
 #loginMenu{
-    margin-left: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
 }
-#userName{
-    padding: 9px;
+#loginMenu>li{
+    margin-right: 20px;
+}
+
+/*회원가입,로그인*/
+#signBox,#loginBox{
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#signBox>h1,#loginBox>h1{
+    text-align: center;
+}
+.signUpForm,.loginForm{
+    padding: 40px 20px;
+    border: 1px solid #111;
+    border-radius: 20px;
+}
+.signUpForm>ul,.loginForm>ul{
+    padding: 0;
+}
+.signUpForm>ul>li,.loginForm>ul>li{
+    margin-bottom: 20px;
+}
+.signUpForm>ul>li>input,.loginForm>ul>li>input{
+    float: right;
+}
+.signUpForm>button,.loginForm>button{
+    width: 330px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.firstBtn:hover{
+    background-color: rgb(229, 115, 138);
+}
+.lastBtn:hover{
+    background-color: aquamarine;
+}
+#preimg{
+    display: block;
+    margin: 0 auto;
 }

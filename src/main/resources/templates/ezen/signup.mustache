@@ -1,16 +1,39 @@
 {{>ezen/header}}
-    <h1>회원가입 페이지</h1>
-    <script src="/js/member.js"></script>
+    <div id="signBox">
+        <h1>회원가입 페이지</h1>
+        <script src="/js/member.js"></script>
 
-    <div>
-        아이디 : <input type="text" id="id"/><br/>
-        비밀번호 : <input type="text" id="pw"/><br/>
-        비밀번호 확인 : <input type="text" id="pwconfirm"/><br/>
-        이름 : <input type="text" id="name"/><br/>
-        전화번호 : <input type="text" id="phone"/><br/>
-        이메일 : <input type="text" id="email"/><br/>
-        프로필 사진 : <input type="text" id="img"/><br/>
-        <a href="/member/login">로그인</a>
-        <button type="button" onclick="signup()">회원가입</button>
+        <form class="signUpForm">
+            <ul>
+                <li>
+                    아이디<input type="text" id="id" name="id"/><br/>
+                </li>
+                <li>
+                    비밀번호<input type="text" id="pw" name="pw"/><br/>
+                </li>
+                <li>
+                    비밀번호 확인<input type="text" id="pwconfirm" name="pwconfirm"/><br/>
+                </li>
+                <li>
+                    이름<input type="text" id="name" name="name"/><br/>
+                </li>
+                <li>
+                    전화번호<input type="text" id="phone" name="phone"/><br/>
+                </li>
+                <li>
+                    이메일<input type="text" id="email" name="email"/><br/>
+                </li>
+                <li>
+                    프로필 사진<input onchange="onChangeImg(this)" type="file" id="img" name="img" accept="image/*"/><br/>
+                </li>
+                <li>
+                    미리보기<img id="preimg" src="/img/default.jpg" width="250px"/>
+                </li>
+            </ul>
+            <button class="firstBtn" type="button" onclick="signup()">회원가입</button>
+            <button class="lastBtn">
+                <a href="/member/login">로그인</a>
+            </button>
+        </form>
     </div>
 {{>ezen/footer}}
