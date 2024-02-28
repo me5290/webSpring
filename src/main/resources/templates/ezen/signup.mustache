@@ -5,38 +5,43 @@
 
         <form class="signUpForm">
             <ul>
-                <li class="idbox">
+                <li class="checkbox">
                     아이디<input onkeyup="idCheck()" type="text" id="id" name="id"/>
                     <span class="idcheckbox"></span>
                 </li>
-                <li class="pwbox">
-                    비밀번호<input onkeyup="pwCheck()" type="text" id="pw" name="pw"/>
+                <li class="checkbox">
+                    비밀번호<input onkeyup="pwCheck()" type="password" id="pw" name="pw"/>
                     <span class="pwcheckbox"></span>
                 </li>
-                <li class="pwconfirmbox">
-                    비밀번호 확인<input onkeyup="pwCheck()" type="text" id="pwconfirm" name="pwconfirm"/>
+                <li class="checkbox">
+                    비밀번호 확인<input onkeyup="pwCheck()" type="password" id="pwconfirm" name="pwconfirm"/>
                     <span class="pwconfirmcheckbox"></span>
                 </li>
-                <li>
-                    이름<input type="text" id="name" name="name"/>
+                <li class="checkbox">
+                    이름<input onkeyup="nameCheck()" type="text" id="name" name="name"/>
+                    <span class="namecheckbox"></span>
                 </li>
-                <li>
-                    전화번호<input type="text" id="phone" name="phone"/>
+                <li class="checkbox">
+                    전화번호<input onkeyup="phoneCheck()" type="text" id="phone" name="phone"/>
+                    <span class="phonecheckbox"></span>
                 </li>
-                <li>
-                    이메일<input type="text" id="email" name="email"/>
+                <li class="checkbox">
+                    이메일<input onkeyup="emailCheck()" type="text" id="email" name="email"/>
+                    <span class="emailcheckbox"></span>
                 </li>
                 <li>
                     프로필 사진<input onchange="onChangeImg(this)" type="file" id="img" name="img" accept="image/*"/>
                 </li>
                 <li>
-                    미리보기<img id="preimg" src="/img/default.jpg" width="250px"/>
+                    <img id="preimg" src="/img/default.jpg" width="250px"/>
                 </li>
             </ul>
-            <button class="firstBtn" type="button" onclick="signup()">회원가입</button>
-            <button class="lastBtn">
-                <a href="/member/login">로그인</a>
-            </button>
+            <button class="btn" type="button" onclick="signup()">회원가입</button>
+            <a href="/member/login">
+                <button class="btn" type="button">
+                    로그인
+                </button>
+            </a>
         </form>
     </div>
 {{>ezen/footer}}

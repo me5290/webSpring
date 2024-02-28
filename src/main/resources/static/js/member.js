@@ -17,11 +17,13 @@ console.log('member.js');
             ()                      : 패턴의 그룹
             ?=.*                    : 앞에 있는 패턴 문자 존재 여부 판단
 
-            예시) /^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9]{8,30}$/
+            예시) 비밀번호 : /^(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9]{8,30}$/
+            예시) 전화번호 : /^([0-9]{2,3})+[-]?([0-9]{3,4})+[-]+([0-9]{4})$/
+            예시) 이메일 : /^[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.+[a-z.]+$/
 */
 
 // 현재 유효성검사 체크 현황
-let checkArray = [false,false,true,true,true]; // 아이디,비밀번호,이름,전화번호,이메일
+let checkArray = [false,false,false,false,false]; // 아이디,비밀번호,이름,전화번호,이메일
 
 // 4. 아이디 유효성검사 (아이디 입력할때마다)
 function idCheck(){
@@ -85,6 +87,55 @@ function pwCheck(){
         document.querySelector('.pwcheckbox').innerHTML = `영대소문자1개이상+숫자1개이상 8~30자리 글자로 입력해주세요.`;
         document.querySelector('.pwcheckbox').style.color='red';
         checkArray[1]=false;
+    }
+}
+
+// 6. 이름 유효성검사
+function nameCheck(){
+    let name = document.querySelector('#name').value;
+    
+    let namej = /^[가-힣]{2,20}$/
+
+    if(namej.test(name)){
+        document.querySelector('.namecheckbox').innerHTML = ``;
+        checkArray[2]=true;
+    }else{
+        document.querySelector('.namecheckbox').innerHTML = `2~20 자리의 한글로 입력해주세요.`;
+        document.querySelector('.namecheckbox').style.color='red';
+        checkArray[2]=false;
+    }
+}
+
+// 7. 전화번호 유효성검사
+function phoneCheck(){
+    let phone = document.querySelector('#phone').value;
+
+    let phonej = /^([0-9]{2,3})+[-]+([0-9]{3,4})+[-]+([0-9]{4})+$/
+
+    if(phonej.test(phone)){
+        document.querySelector('.phonecheckbox').innerHTML = ``;
+        checkArray[3]=true;
+    }else{
+        document.querySelector('.phonecheckbox').innerHTML = `\'-\'를 포함한 번호를 입력해주세요.`;
+        document.querySelector('.phonecheckbox').style.color='red';
+        checkArray[3]=false;
+    }
+}
+
+// 8. 이메일 유효성검사
+function emailCheck(){
+    let email = document.querySelector('#email').value;
+
+    let emailj = /^[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.+[a-z.]+$/
+
+    if(emailj.test(email)){
+        document.querySelector('.emailcheckbox').innerHTML = `인증이 완료 되었습니다.`;
+        document.querySelector('.emailcheckbox').style.color='green';
+        checkArray[4]=true;
+    }else{
+        document.querySelector('.emailcheckbox').innerHTML = `\'@\'를 포함한 이메일 형식으로 입력해주세요.`;
+        document.querySelector('.emailcheckbox').style.color='red';
+        checkArray[4]=false;
     }
 }
 

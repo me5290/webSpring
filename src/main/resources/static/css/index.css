@@ -11,6 +11,9 @@
     font-family: 'Ownglyph_meetme-Rg';
     font-size: 18px;
 }
+.navbar-collapse{
+    justify-content: space-between;
+}
 a{
     text-decoration: none;
     color: #111;
@@ -62,29 +65,27 @@ a{
 .signUpForm>ul>li>input,.loginForm>ul>li>input{
     float: right;
 }
-.signUpForm>button,.loginForm>button{
+.btn{
     width: 330px;
     height: 40px;
     display: block;
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 10px;
+    border:1px solid #333;
 }
-.firstBtn:hover{
-    background-color: rgb(229, 115, 138);
-}
-.lastBtn:hover{
+.btn:hover{
     background-color: aquamarine;
 }
 #preimg{
     display: block;
     margin: 0 auto;
 }
-.idbox,.pwbox,.pwconfirmbox{
+.checkbox{
     position: relative;
     margin-bottom: 40px !important;
 }
-.idcheckbox,.pwcheckbox,.pwconfirmcheckbox{
+.idcheckbox,.pwcheckbox,.pwconfirmcheckbox,.namecheckbox,.phonecheckbox,.emailcheckbox{
     position: absolute;
     top: 32px;
     right: 4px;
