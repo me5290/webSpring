@@ -82,7 +82,7 @@ function pwCheck(){
         document.querySelector('.pwcheckbox').innerHTML = `사용 가능한 비밀번호입니다.`;
         document.querySelector('.pwcheckbox').style.color='green';
     }else{
-        document.querySelector('.pwcheckbox').innerHTML = `사용 불가능한 비밀번호입니다.`;
+        document.querySelector('.pwcheckbox').innerHTML = `영대소문자1개이상+숫자1개이상 8~30자리 글자로 입력해주세요.`;
         document.querySelector('.pwcheckbox').style.color='red';
         checkArray[1]=false;
     }
