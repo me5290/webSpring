@@ -8,10 +8,7 @@ import ezenweb.service.MemberService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -91,6 +88,13 @@ public class MemberController {
     @ResponseBody
     public MemberDto doGetLoginInfo(String id){
         return memberService.doGetLoginInfo(id); // 서비스 요청과 응답 전달
+    }
+
+    // 4. 아이디 중복 체크 요청
+    @GetMapping("/member/signup/idcheck")
+    @ResponseBody
+    public boolean doGetIdCheck(@RequestParam String id){
+        return memberService.doGetIdCheck(id);
     }
 
     // 4. 회원가입 페이지 요청

@@ -3,6 +3,7 @@ package ezenweb.model.dao;
 import ezenweb.model.dto.LoginDto;
 import ezenweb.model.dto.MemberDto;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Component
 public class MemberDao extends Dao{
@@ -68,5 +69,21 @@ public class MemberDao extends Dao{
             System.out.println(e);
         }
         return memberDto;
+    }
+
+    // 4. 아이디 중복 체크 요청
+    public boolean doGetIdCheck(String id){
+        try {
+            String sql = "select * from member where id = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,id);
+            rs = ps.executeQuery();
+            if (rs.next()){
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return false;
     }
 }
