@@ -41,15 +41,19 @@ a{
 #loginMenu>li{
     margin-right: 20px;
 }
+.nav-item>a:hover{
+    color:aquamarine;
+}
 
 /*회원가입,로그인*/
 #signBox,#loginBox{
     width: 400px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px 40px;
 }
 #signBox>h1,#loginBox>h1{
     text-align: center;
+    margin: 10px 0 60px 0;
 }
 .signUpForm,.loginForm{
     padding: 40px 20px;
@@ -63,10 +67,12 @@ a{
     margin-bottom: 20px;
 }
 .signUpForm>ul>li>input,.loginForm>ul>li>input{
-    float: right;
+    margin-right: 54px;
+    width: 100%;
+    padding-left: 4px;
 }
 .btn{
-    width: 330px;
+    width: 95%;
     height: 40px;
     display: block;
     margin: 0 auto;
@@ -80,14 +86,34 @@ a{
 #preimg{
     display: block;
     margin: 0 auto;
+    object-fit: cover;
+}
+#email,#certi{
+    width: 75%;
 }
 .checkbox{
     position: relative;
     margin-bottom: 40px !important;
 }
-.idcheckbox,.pwcheckbox,.pwconfirmcheckbox,.namecheckbox,.phonecheckbox,.emailcheckbox{
+.checkbox>p{
+    margin-bottom: 0;
+}
+.idcheckbox,.pwcheckbox,.pwconfirmcheckbox,.namecheckbox,.phonecheckbox,.emailcheckbox,.timebox{
     position: absolute;
-    top: 32px;
-    right: 4px;
+    bottom: -24px;
+    left: 0;
     font-size: 14px;
+}
+.send{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    width: 60px;
+    height: 31px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #d4d4d4;
+}
+.send:hover{
+    background-color: aquamarine;
 }

@@ -24,19 +24,7 @@ public class EmailService {
     @Autowired
     private JavaMailSender javaMailSender;
 
-    public void send(){
-        Random random = new Random();
-        int createNum = 0;  			//1자리 난수
-        String ranNum = ""; 			//1자리 난수 형변환 변수
-        int letter    = 6;			//난수 자릿수:6
-        String resultNum = "";  		//결과 난수
-
-        for (int i=0; i<letter; i++) {
-            createNum = random.nextInt(9);		//0부터 9까지 올 수 있는 1자리 난수 생성
-            ranNum =  Integer.toString(createNum);  //1자리 난수를 String으로 형변환
-            resultNum += ranNum;			//생성된 난수(문자열)을 원하는 수(letter)만큼 더하며 나열
-        }
-
+    public void send(String toEmail , String subject , String content){
         try {
             // 메일 내용물들을 포맷하기 위한 MIME 형식 객체
             MimeMessage message = javaMailSender.createMimeMessage();
@@ -46,11 +34,11 @@ public class EmailService {
             // 2. 메일 보내는 사람
             mimeMessageHelper.setFrom("me5290@naver.com");
             // 3. 메일 받는 사람
-            mimeMessageHelper.setTo("z4745290@gmail.com");
+            mimeMessageHelper.setTo(toEmail);
             // 4. 메일 제목
-            mimeMessageHelper.setSubject("인증번호");
+            mimeMessageHelper.setSubject(subject);
             // 5. 메일
-            mimeMessageHelper.setText("인증번호는 "+resultNum+"입니다.");
+            mimeMessageHelper.setText(content);
             // 6. 메일 전송
             javaMailSender.send(message);
         }catch (Exception e){

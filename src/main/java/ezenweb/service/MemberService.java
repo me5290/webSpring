@@ -33,9 +33,7 @@ public class MemberService {
         memberDto.setUuidFile(fileName);
         // 이메일 테스트
         boolean result = memberDao.doPostSignup(memberDto);
-        if(result){
-            emailService.send();
-        }
+
         return result;
     }
 

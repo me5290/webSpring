@@ -1,36 +1,48 @@
 {{>ezen/header}}
     <div id="signBox">
         <h1>회원가입 페이지</h1>
-        <script src="/js/member.js"></script>
 
         <form class="signUpForm">
             <ul>
                 <li class="checkbox">
-                    아이디<input onkeyup="idCheck()" type="text" id="id" name="id"/>
+                    <p>아이디</p>
+                    <input onkeyup="idCheck()" type="text" id="id" name="id"/>
                     <span class="idcheckbox"></span>
                 </li>
                 <li class="checkbox">
-                    비밀번호<input onkeyup="pwCheck()" type="password" id="pw" name="pw"/>
+                    <p>비밀번호</p>
+                    <input onkeyup="pwCheck()" type="password" id="pw" name="pw"/>
                     <span class="pwcheckbox"></span>
                 </li>
                 <li class="checkbox">
-                    비밀번호 확인<input onkeyup="pwCheck()" type="password" id="pwconfirm" name="pwconfirm"/>
+                    <p>비밀번호 확인</p>
+                    <input onkeyup="pwCheck()" type="password" id="pwconfirm" name="pwconfirm"/>
                     <span class="pwconfirmcheckbox"></span>
                 </li>
                 <li class="checkbox">
-                    이름<input onkeyup="nameCheck()" type="text" id="name" name="name"/>
+                    <p>이름</p>
+                    <input onkeyup="nameCheck()" type="text" id="name" name="name"/>
                     <span class="namecheckbox"></span>
                 </li>
                 <li class="checkbox">
-                    전화번호<input onkeyup="phoneCheck()" type="text" id="phone" name="phone"/>
+                    <p>전화번호</p>
+                    <input onkeyup="phoneCheck()" type="text" id="phone" name="phone"/>
                     <span class="phonecheckbox"></span>
                 </li>
                 <li class="checkbox">
-                    이메일<input onkeyup="emailCheck()" type="text" id="email" name="email"/>
+                    <p>이메일</p>
+                    <input onkeyup="emailCheck()" type="text" id="email" name="email"/>
+                    <button class="send" type="button" onclick="authreq()" disabled>
+                        인증번호 발송
+                    </button>
                     <span class="emailcheckbox"></span>
                 </li>
+                <li class="checkbox authbox">
+                    
+                </li>
                 <li>
-                    프로필 사진<input onchange="onChangeImg(this)" type="file" id="img" name="img" accept="image/*"/>
+                    <p>프로필 사진</p>
+                    <input onchange="onChangeImg(this)" type="file" id="img" name="img" accept="image/*"/>
                 </li>
                 <li>
                     <img id="preimg" src="/img/default.jpg" width="250px"/>
@@ -44,4 +56,5 @@
             </a>
         </form>
     </div>
+     <script src="/js/member.js"></script>
 {{>ezen/footer}}

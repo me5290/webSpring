@@ -122,6 +122,10 @@ function phoneCheck(){
     }
 }
 
+let timer = 0;
+let authbox = document.querySelector('.authbox');
+let send = document.querySelector('.send');
+
 // 8. 이메일 유효성검사
 function emailCheck(){
     let email = document.querySelector('#email').value;
@@ -129,15 +133,136 @@ function emailCheck(){
     let emailj = /^[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.+[a-z.]+$/
 
     if(emailj.test(email)){
-        document.querySelector('.emailcheckbox').innerHTML = `인증이 완료 되었습니다.`;
+        document.querySelector('.emailcheckbox').innerHTML = `올바른 형식입니다.`;
         document.querySelector('.emailcheckbox').style.color='green';
-        checkArray[4]=true;
+        send.disabled = false;
+        send.style.cursor="pointer";
+
     }else{
-        document.querySelector('.emailcheckbox').innerHTML = `\'@\'를 포함한 이메일 형식으로 입력해주세요.`;
+        document.querySelector('.emailcheckbox').innerHTML = `\'@\'와\'.\'을 포함한 이메일 형식으로 입력해주세요.`;
         document.querySelector('.emailcheckbox').style.color='red';
+        send.disabled = true;
         checkArray[4]=false;
     }
 }
+
+// 9. 인증요청
+function authreq(){
+    console.log('인증');
+    // 1. 
+
+    // 2. 
+    let html = `
+        <p>인증번호</p>
+        <input onkeyup="" type="text" id="certi" name="certi"/>
+        <button class="send" type="button" onclick="auth()">
+            인증
+        </button>
+        <span class="timebox">02분00초</span>
+    `;
+
+    // 3. 
+    authbox.innerHTML = html;
+
+    // ======== 자바에게 인증 요청 ========= //
+    $.ajax({
+        url:"/auth/email/request",
+        method:"get",
+        data : {email : document.querySelector('#email').value},
+        success:(r)=>{
+            if(r){
+                // 4. 타이머 함수 실행
+                timer = 120;
+                ontimer();
+
+                // 해당 버튼 사용 금지
+                send.disabled = true;
+            }else{
+                alert('관리자에게 문의');
+            }
+        }
+    })
+    // ==================================== //
+}
+let interval;
+// 10. 타이머
+function ontimer(){
+    interval = setInterval(() => {
+        // 1. 초 변수를 분/초로 변환
+        let m = parseInt(timer/60); // 분
+        let s = parseInt(timer%60); // 분 제외한 초
+        
+        // 2. 시간을 두 자릿수로 표현
+        m = m < 10 ? "0"+m : m;
+        s = s < 10 ? "0"+s : s;
+    
+        // 3. 시간 출력
+        document.querySelector('.timebox').innerHTML = `${m}분${s}초`;
+        
+        // 4. 초 감소
+        timer--;
+    
+        // 5. 만약에 초가 0보다 작아지면 종료
+        if(timer < 0){
+            clearInterval(interval);
+            authbox.innerHTML = `다시 인증을 요청 해주세요.`;
+            send.disabled = false;
+        }
+    } , 1000);
+}
+
+// 11. 인증 함수
+function auth(){
+    // 1. 내가 입력한 인증번호
+    let certi = document.querySelector('#certi').value;
+    // == 내가 입력한 인증번호를 자바에게 보내기 == //
+    $.ajax({
+        url:"/auth/email/check",
+        method:"get",
+        data : {certi : certi},
+        success:(r)=>{
+            // 3. 성공시 / 실패시
+            if(r){
+                checkArray[4]=true;
+                document.querySelector('.emailcheckbox').innerHTML = `인증완료`;
+                document.querySelector('.emailcheckbox').style.color='gray';
+                clearInterval(interval);
+                authbox.innerHTML = '';
+                send.disabled = true;
+            }else{
+                checkArray[4]=false;
+                alert('인증번호가 틀립니다.');
+            }
+        }
+    })
+    // ========================================== //
+}
+
+// 테스트
+    // setInterval(함수,밀리초) : 특정 밀리초 마다 함수 실행
+    // clearInterval(Interval변수) : 종료
+// let timer = 3;
+
+// let interval = setInterval(() => {
+//     // 1. 초 변수를 분/초로 변환
+//     let m = parseInt(timer/60); // 분
+//     let s = parseInt(timer%60); // 분 제외한 초
+    
+//     // 2. 시간을 두 자릿수로 표현
+//     m = m < 10 ? "0"+m : m;
+//     s = s < 10 ? "0"+s : s;
+
+//     // 3. 시간 출력
+//     document.querySelector('.authbox').innerHTML = `${m}분${s}초`;
+    
+//     // 4. 초 감소
+//     timer--;
+
+//     // 5. 만약에 초가 0보다 작아지면 종료
+//     if(timer < 0){
+//         clearInterval(interval);
+//     }
+// } , 1000);
 
 // 1. 회원가입
 function signup(){
