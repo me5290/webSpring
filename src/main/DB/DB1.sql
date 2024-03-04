@@ -33,3 +33,42 @@ create table member(
     constraint member_no_pk primary key(no)		-- 회원 번호 pk
 );
 select * from member;
+
+drop table if exists bcategory;
+create table bcategory(
+	bcno int unsigned auto_increment,
+    bcname varchar(30) not null unique,
+    bcdate datetime default now() not null,
+    constraint bcategory_bcno_pk primary key(bcno)
+);
+insert into bcategory(bcname) values('자유'),('노하우');
+select * from bcategory;
+
+drop table if exists board;
+create table board(
+	bno bigint unsigned auto_increment,
+    btitle varchar(255) not null,
+    bcontent longtext,
+    bfile varchar(255),
+    bview int default 0 not null,
+    bdate datetime default now() not null,
+    mno bigint,
+    bcno int unsigned,
+    constraint board_bno_pk primary key(bno),
+    constraint board_mno_fk foreign key(mno) references member(no) on update cascade on delete cascade,
+    constraint board_bcno_fk foreign key(bcno) references bcategory(bcno) on update cascade on delete cascade
+);
+select * from board;
+
+drop table if exists breply;
+create table breply(
+	brno bigint unsigned auto_increment,
+    brcontent varchar(255) not null,
+    brdate datetime default now() not null,
+    brindex bigint default 0 not null,
+    mno bigint,
+    bno bigint unsigned,
+    constraint breply_brno_pk primary key(brno),
+    constraint breply_mno_fk foreign key(mno) references member(no) on update cascade on delete cascade,
+    constraint breply_bno_fk foreign key(bno) references board(bno) on update cascade on delete cascade
+);
