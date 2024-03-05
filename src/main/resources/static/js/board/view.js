@@ -23,7 +23,7 @@ function onView(){
             document.querySelector('.bcno').innerHTML = r.bcno;
             document.querySelector('.btitle').innerHTML = r.btitle;
             document.querySelector('.bcontent').innerHTML = r.bcontent;
-            document.querySelector('.mno').innerHTML = r.mno;
+            document.querySelector('.mno').innerHTML = r.mid;
             document.querySelector('.bdate').innerHTML = r.bdate;
             document.querySelector('.bview').innerHTML = r.bview;
             document.querySelector('.bfile').innerHTML = r.bfile;
