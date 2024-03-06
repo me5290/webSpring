@@ -1,7 +1,31 @@
 {{>ezen/header}}
     <div class="container">
         <h3>게시판</h3>
-        <a href="/board/write">글쓰기</a>
+        <div id="boardInfo">
+            <div id="writeNcategory">
+                <select onchange="onBcno(this)">
+                    <option value="0">전체보기</option>
+                    <option value="1">자유</option>
+                    <option value="2">노하우</option>
+                </select>
+                <a href="/board/write"><button type="button" id="writeBtn">글쓰기</button></a>
+            </div>
+            <div id="boardPlusInfo">
+                <select class="pageBoardSize" onchange="onPageBoardSize(this)">
+                    <option value="5">
+                        5
+                    </option>
+                    <option value="10">
+                        10
+                    </option>
+                    <option value="15">
+                        15
+                    </option>
+                </select>
+                <p>전체 페이지 수 : <span class="totalPage"></span></p>
+                <p>전체 게시물 수 : <span class="totalBoardSize"></span></p>
+            </div>
+        </div>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -21,6 +45,15 @@
 
             </ul>
         </nav>
+        <div id="boardSearch">
+            <select class="key">
+                <option value="b.btitle">제목</option>
+                <option value="b.bcontent">내용</option>
+                <option value="m.id">작성자</option>
+            </select>
+            <input class="keyword" type="text"/>
+            <button type="button" id="searchBtn" onclick="onSearch()">검색</button>
+        </div>
     </div>
     <script src="/js/board/board.js"></script>
 {{>ezen/footer}}

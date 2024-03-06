@@ -48,9 +48,9 @@ public class BoardController {
     // 2. 전체 글 출력 호출
     @GetMapping("/do") // (쿼리스트링)매개변수 : 현재페이지
     @ResponseBody
-    public BoardPageDto doGetBoardViewList(int page){
+    public BoardPageDto doGetBoardViewList(@RequestParam int page , @RequestParam int pageBoardSize , @RequestParam int bcno , @RequestParam String key , @RequestParam String keyword){
         System.out.println("BoardController.doGetBoardViewList");
-        return boardService.doGetBoardViewList(page);
+        return boardService.doGetBoardViewList(page , pageBoardSize , bcno , key , keyword);
     }
 
     // 3. 개별 글 출력 호출

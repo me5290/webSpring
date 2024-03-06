@@ -18,6 +18,9 @@ a{
     text-decoration: none;
     color: #111;
 }
+p{
+    margin:0;
+}
 #topMenu{
     display: flex;
     justify-content: space-between;
@@ -117,6 +120,53 @@ a{
 .send:hover{
     background-color: aquamarine;
 }
+
+/*게시판*/
 .page-item{
     cursor : pointer;
+}
+#boardInfo{
+    display: flex;
+    justify-content : space-between;
+    align-items : center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#boardSearch{
+    width:360px;
+    margin: 0 auto;
+    margin-top:40px;
+}
+#writeBtn{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border:1px solid #333;
+    background-color : #fff;
+}
+.table{
+    margin-bottom:40px;
+}
+#searchBtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #333;
+    background-color : #fff;
+}
+#writeBtn:hover,#searchBtn:hover{
+    background-color: aquamarine;
+}
+.pageBoardSize{
+    width:104px;
+}
+.key{
+    width:60px;
+    height:31px;
+}
+.keyword{
+    padding:1px 10px;
 }
