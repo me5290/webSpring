@@ -26,7 +26,29 @@ function onView(){
             document.querySelector('.mno').innerHTML = r.mid;
             document.querySelector('.bdate').innerHTML = r.bdate;
             document.querySelector('.bview').innerHTML = r.bview;
-            document.querySelector('.bfile').innerHTML = r.bfile;
+            document.querySelector('.bfile').innerHTML = `<a href="/board/file/download?bfile=${r.bfile}">${r.bfile}</a>`;
+        }
+    })
+}
+
+// 2. 게시물 수정
+function updateView(){
+    $.ajax({
+        url:"",
+    })
+}
+
+// 3. 게시물 삭제
+function deleteView(){
+    $.ajax({
+        url:"/board/delete.do",
+        method:"delete",
+        data:{bno:bno},
+        success:(r)=>{
+            if(r){
+                alert('삭제가 완료 되었습니다.');
+                location.href="/board";
+            }
         }
     })
 }

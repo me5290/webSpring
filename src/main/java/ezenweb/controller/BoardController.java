@@ -3,12 +3,14 @@ package ezenweb.controller;
 import ezenweb.model.dto.BoardDto;
 import ezenweb.model.dto.BoardPageDto;
 import ezenweb.service.BoardService;
+import ezenweb.service.FileService;
 import ezenweb.service.MemberService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
 import java.util.List;
 
 @Controller
@@ -20,6 +22,8 @@ public class BoardController {
     private HttpServletRequest request;
     @Autowired
     private MemberService memberService;
+    @Autowired
+    private FileService fileService;
 
     // 1. 글쓰기 처리
     @PostMapping("/write.do")
@@ -62,8 +66,30 @@ public class BoardController {
     }
 
     // 4. 글 수정 처리
+    @PutMapping("/update.do")
+    @ResponseBody
+    public boolean doUpdateBoard(BoardDto boardDto){
+        System.out.println("BoardController.doPutBoard");
+        return boardService.doUpdateBoard(boardDto);
+    }
 
     // 5. 글 삭제 처리
+    @DeleteMapping("/delete.do")
+    @ResponseBody
+    public boolean doDeleteBoard(@RequestParam int bno){
+        System.out.println("BoardController.doDeleteBoard");
+        return boardService.doDeleteBoard(bno);
+    }
+
+    // 6. 다운로드 처리 (1.매개변수 : 파일명 , 2.반환 : , 3.사용처 : get http요청)
+    @GetMapping("/file/download")
+    @ResponseBody
+    public void getBoardFileDownload(@RequestParam String bfile){
+        System.out.println("BoardController.getBoardFileDownload");
+        System.out.println("bfile = " + bfile);
+        fileService.fileDownLoad(bfile);
+        return;
+    }
 
     // =============================== //
 
@@ -86,4 +112,8 @@ public class BoardController {
     }
 
     // 4. 글 수정 페이지 이동
+    @GetMapping("/update")
+    public String getBoardUpdate(){
+        return "ezen/board/update";
+    }
 }

@@ -6,10 +6,7 @@ import ezenweb.model.dto.BoardPageDto;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,6 +88,27 @@ public class BoardService {
     }
 
     // 4. 글 수정 처리
+    public boolean doUpdateBoard(BoardDto boardDto){
+        System.out.println("BoardService.doPutBoard");
+        return boardDao.doUpdateBoard(boardDto);
+    }
 
     // 5. 글 삭제 처리
+    public boolean doDeleteBoard( int bno){
+        System.out.println("BoardService.doDeleteBoard");
+        // 게시판 정보 호출
+        String bfile = boardDao.doGetBoardView(bno).getBfile();
+
+        // 1. DB 처리
+        boolean result = boardDao.doDeleteBoard(bno);
+
+        // 2. DB처리 성공시 첨부파일도 삭제
+        if(result){
+            // 기존에 첨부파일이 있었으면
+            if(bfile != null){
+                fileService.fileDelete(bfile);
+            }
+        }
+        return result;
+    }
 }
