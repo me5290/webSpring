@@ -1,16 +1,37 @@
 {{>ezen/header}}
-    <div class="container">
-        <h3>게시물 상세페이지</h3>
-        <a href="/board">목록가기</a>
-        카테고리 : <div class="bcno"></div>
-        제목 : <div class="btitle"></div>
-        내용 : <div class="bcontent"></div>
-        작성자 : <div class="mno"></div>
-        작성일 : <div class="bdate"></div>
-        조회수 : <div class="bview"></div>
-        첨부파일 : <div class="bfile"></div>
-        <button type="button"><a href="/board/update">수정</a></button>
-        <button type="button" onclick="deleteView()">삭제</button>
+    <div class="sangsaeBox">
+        <div class="topBoard">
+            <h3>게시물 상세페이지</h3>
+            <p class="backBoardList">
+                <a href="/board">목록가기</a>
+            </p>
+        </div>
+        <div class="btitle"></div>
+        <div id="writeInfo">
+            <div id="categoryInfo">
+                <p>카테고리 : </p><div class="bcno"></div>
+            </div>
+            <div id="infoBox">
+                <div class="writerInfo">
+                    <p>작성자 : </p><div class="mno"></div>
+                </div>
+                <div class="writerInfo">
+                    <p>작성일 : </p><div class="bdate"></div>
+                </div>
+                <div class="writerInfo">
+                    <p>조회수 : </p><div class="bview"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bcontent"></div>
+        <div class="bottomBoard">
+            <div class="fileBox">
+                <p>첨부파일 : </p><div class="bfile"></div>
+            </div>
+            <div class="btnBox">
+
+            </div>
+        </div>
     </div>
     <script src="/js/board/view.js"></script>
 {{>ezen/footer}}

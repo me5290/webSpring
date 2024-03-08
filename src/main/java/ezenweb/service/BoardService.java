@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class BoardService {
@@ -90,6 +91,30 @@ public class BoardService {
     // 4. 글 수정 처리
     public boolean doUpdateBoard(BoardDto boardDto){
         System.out.println("BoardService.doPutBoard");
+
+        String bfile = boardDao.doGetBoardView((int)boardDto.getBno()).getBfile();
+
+        // 1. 새로운 첨부파일이 있다/없다
+        if(!boardDto.getUploadfile().isEmpty()){ // 2. 수정시 새로운 첨부파일이 있으면
+            // 3. 새로운 첨부파일을 업로드하고 기존 첨부파일 삭제
+            String fileName = fileService.fileUpload(boardDto.getUploadfile());
+            if(fileName != null){ // 업로드 성공
+                boardDto.setBfile(fileName); // 4. 새로운 첨부파일의 이름 dto에 대입
+
+                // 5. 기존 첨부파일 삭제
+                    // 6. 기존 첨부파일명 구하기
+                //String bfile = boardDao.doGetBoardView((int)boardDto.getBno()).getBfile();
+                    // 7. 기존 첨부파일 삭제
+                fileService.fileDelete(bfile);
+            }else{
+                return false; // 업로드 실패
+            }
+        }else {
+            // 업로드 할 필요 없다.
+            // 기존 첨부파일명을 그대로 대입
+            boardDto.setBfile(bfile);
+        }
+
         return boardDao.doUpdateBoard(boardDto);
     }
 
@@ -110,5 +135,22 @@ public class BoardService {
             }
         }
         return result;
+    }
+
+    // 6. 작성자 인증
+    public boolean boardWriterAuth(long bno,String mid){
+        return boardDao.boardWriterAuth(bno,mid);
+    }
+
+    // 7. 댓글 작성
+    public boolean doPostReplyWrite(Map<String,String > map){
+        System.out.println("BoardService.doPostReplyWrite");
+        return boardDao.doPostReplyWrite(map);
+    }
+
+    // 8. 댓글 출력
+    public List<Map<String ,String >> doGetReplyDo(int bno){
+        System.out.println("BoardService.doGetReplyDo");
+        return boardDao.doGetReplyDo(bno);
     }
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/board")
@@ -70,7 +71,18 @@ public class BoardController {
     @ResponseBody
     public boolean doUpdateBoard(BoardDto boardDto){
         System.out.println("BoardController.doPutBoard");
-        return boardService.doUpdateBoard(boardDto);
+        // 유효성검사
+            // 1. 현재 로그인된 아이디(세션)
+            Object object = request.getSession().getAttribute("loginDto");
+            if(object != null){
+                String mid = (String) object;
+                boolean result = boardService.boardWriterAuth(boardDto.getBno(),mid); // 해당 세션정보가 작성한 글인지 체크
+                if (result){
+                    // 2. 현재 수정할 게시물의 작성자 아이디(DB)
+                    return boardService.doUpdateBoard(boardDto);
+                }
+            }
+        return false;
     }
 
     // 5. 글 삭제 처리
@@ -78,7 +90,18 @@ public class BoardController {
     @ResponseBody
     public boolean doDeleteBoard(@RequestParam int bno){
         System.out.println("BoardController.doDeleteBoard");
-        return boardService.doDeleteBoard(bno);
+        // 유효성검사
+            // 1. 현재 로그인된 아이디(세션)
+            Object object = request.getSession().getAttribute("loginDto");
+            if(object != null){
+                String mid = (String) object;
+                boolean result = boardService.boardWriterAuth(bno,mid); // 해당 세션정보가 작성한 글인지 체크
+                if (result){
+                    // 2. 현재 수정할 게시물의 작성자 아이디(DB)
+                    return boardService.doDeleteBoard(bno);
+                }
+            }
+        return false;
     }
 
     // 6. 다운로드 처리 (1.매개변수 : 파일명 , 2.반환 : , 3.사용처 : get http요청)
@@ -89,6 +112,39 @@ public class BoardController {
         System.out.println("bfile = " + bfile);
         fileService.fileDownLoad(bfile);
         return;
+    }
+
+    // 7. 댓글 작성 (brcontent , brindex , mno , bno)
+    @PostMapping("/reply/write.do")
+    @ResponseBody
+    public boolean doPostReplyWrite(@RequestParam Map<String,String > map){
+        System.out.println("BoardController.doPostReplyWrite");
+        System.out.println("map = " + map);
+
+        // 1. 현재 로그인된 세션(톰캣서버 메모리(JVM) 저장소) 호출
+        Object object = request.getSession().getAttribute("loginDto");
+        if(object == null){
+            return false;
+        }
+
+        // 2. 형변환
+        String mid = (String) object;
+
+        // 3. mid를 mno 찾아오기
+        long mno = memberService.doGetLoginInfo(mid).getNo();
+
+        // 4. map에 mno 넣기
+        map.put("mno",mno+"");
+
+        return boardService.doPostReplyWrite(map);
+    }
+
+    // 8. 댓글 출력 (brno , brcontent , brdate , brindex , mno)
+    @GetMapping("/reply/do")
+    @ResponseBody
+    public List<Map<String ,String >> doGetReplyDo(int bno){
+        System.out.println("BoardController.doGetReplyDo");
+        return boardService.doGetReplyDo(bno);
     }
 
     // =============================== //

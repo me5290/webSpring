@@ -7,6 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.net.URLEncoder;
+import java.util.Arrays;
 import java.util.UUID;
 
 @Service // 해당 클래스를 스프링 컨테이너(저장소)에 빈(객체) 등록
@@ -76,14 +77,24 @@ public class FileService {
                     // 바이트 하나씩 읽어오면서 바이트배열 저장 => 바이트 배열 필요하다
                 fin.read(bytes); // - 익명스트림객체.read(바이트배열) : 하나씩 바이트를 읽어와서 해당 바이트 배열에 저장 해주는 함수
 
+                // new FileInputStream(file).read(bytes); : 68줄,78줄 줄여서 사용 가능
+
                 // 1-4 확인
                 System.out.println("bytes = "+ bytes);
+                System.out.println("Arrays.toString(bytes) = " + Arrays.toString(bytes));
 
                 // 2. 불러온 바이트를 HTTP response 이용한 바이트로 응답한다. [ BufferedOutputStream ]
                 // 2-1. HTTP 응답스트림 객체 생성
                 BufferedOutputStream fout = new BufferedOutputStream(response.getOutputStream()) ;
+
                 // 2-2. 내보내기 할 바이트 배열 준비 상태이면 내보내기
                 fout.write(bytes);
+
+                // 버퍼 초기화
+                    // 안전하게 스트림 닫기
+                fin.close();
+                fout.close();
+
             } catch (Exception e) {
                 System.out.println("e = " + e);
             }

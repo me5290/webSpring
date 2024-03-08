@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class BoardDao extends Dao {
@@ -154,12 +156,13 @@ public class BoardDao extends Dao {
     public boolean doUpdateBoard(BoardDto boardDto){
         System.out.println("BoardDao.doPutBoard");
         try {
-            String sql="update board set btitle = ? , bcontent = ? , bcno = ? where bno = ?";
+            String sql="update board set btitle = ? , bcontent = ? , bcno = ? , bfile = ? where bno = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1,boardDto.getBtitle());
             ps.setString(2,boardDto.getBcontent());
             ps.setLong(3,boardDto.getBcno());
-            ps.setLong(4,boardDto.getBno());
+            ps.setString(4,boardDto.getBfile());
+            ps.setLong(5,boardDto.getBno());
             int count = ps.executeUpdate();
             if(count == 1){
                 return true;
@@ -185,5 +188,65 @@ public class BoardDao extends Dao {
             System.out.println("e = " + e);
         }
         return false;
+    }
+
+    // 6. 작성자 인증
+    public boolean boardWriterAuth(long bno,String mid){
+        try {
+            String sql="select * from board b inner join member m on b.mno = m.no where b.bno = ? and m.id = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setLong(1,bno);
+            ps.setString(2,mid);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println("e = " + e);
+        }
+        return false;
+    }
+
+    // 7. 댓글 작성
+    public boolean doPostReplyWrite(Map<String,String > map){
+        try {
+            String sql = "insert into breply(brcontent , brindex , mno , bno) values(?,?,?,?)";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,map.get("brcontent"));
+            ps.setString(2,map.get("brindex"));
+            ps.setString(3,map.get("mno"));
+            ps.setString(4,map.get("bno"));
+            int count = ps.executeUpdate();
+            if(count == 1){
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println("e = " + e);
+        }
+        return false;
+    }
+
+    // 8. 댓글 출력
+    public List<Map<String ,String >> doGetReplyDo(int bno){
+        List<Map<String ,String >> list = new ArrayList<>();
+        try {
+            // 상위 댓글 먼저 출력
+            String sql="select * from breply where bno = ? and brindex = 0";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1,bno);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                Map<String , String > map = new HashMap<>();
+                map.put("brno",rs.getString("brno"));
+                map.put("brcontent",rs.getString("brcontent"));
+                map.put("brdate",rs.getString("brdate"));
+                map.put("mno",rs.getString("mno"));
+
+                list.add(map);
+            }
+        }catch (Exception e){
+            System.out.println("e = " + e);
+        }
+        return list;
     }
 }

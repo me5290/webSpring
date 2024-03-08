@@ -1,18 +1,18 @@
 {{>ezen/header}}
-<div class="container">
-    <h3>글수정 페이지</h3>
-    <form class="boardWriteForm">
-        카테고리
-        <select name="bcno">
-            <option value="1">자유</option>
-            <option value="2">노하우</option>
-        </select><br/>
-        제목 <input name="btitle" type="text"/><br/>
-        내용 <textarea id="summernote" name="bcontent"></textarea><br/>
-        첨부파일 <input name="uploadfile" type="file"/><br/>
-    </form>
-    <button type="button" onclick="updateView()">완료</button>
-    <button type="button"><a href="/board">취소</a></button>
-</div>
-<script src="/js/board/view.js"></script>
+    <div class="container">
+        <h3>글쓰기 페이지</h3>
+        <form class="boardUpdateForm">
+            카테고리
+            <select class="bcno" name="bcno">
+                <option value="1">자유</option>
+                <option value="2">노하우</option>
+            </select><br/>
+            제목 <input class="btitle" name="btitle" type="text"/><br/>
+            내용 <textarea class="bcontent" id="summernote" name="bcontent"></textarea><br/>
+            기존 첨부파일 <div class="bfile"></div>
+            수정할 첨부파일 <input name="uploadfile" type="file"/><br/>
+            <button onclick="onUpdate()" type="button">수정</button>
+        </form>
+    </div>
+    <script src="/js/board/update.js"></script>
 {{>ezen/footer}}
