@@ -2,6 +2,7 @@
 $.ajax({
     url:"/member/login/check",
     method:"get",
+    async:false,
     success:(r)=>{
         console.log(r);
 

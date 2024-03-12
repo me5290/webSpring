@@ -235,3 +235,6 @@ p{
     color:rgb(47, 149, 115);
     text-decoration: underline;
 }
+#summernote img{
+    width:200px;
+}

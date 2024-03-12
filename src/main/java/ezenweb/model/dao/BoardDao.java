@@ -4,6 +4,7 @@ import ezenweb.model.dto.BoardDto;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -227,8 +228,8 @@ public class BoardDao extends Dao {
     }
 
     // 8. 댓글 출력
-    public List<Map<String ,String >> doGetReplyDo(int bno){
-        List<Map<String ,String >> list = new ArrayList<>();
+    public List<Map<String ,Object >> doGetReplyDo(int bno){
+        List<Map<String ,Object >> list = new ArrayList<>();
         try {
             // 상위 댓글 먼저 출력
             String sql="select * from breply where bno = ? and brindex = 0";
@@ -236,12 +237,30 @@ public class BoardDao extends Dao {
             ps.setInt(1,bno);
             rs = ps.executeQuery();
             while (rs.next()){
-                Map<String , String > map = new HashMap<>();
+                Map<String , Object > map = new HashMap<>();
                 map.put("brno",rs.getString("brno"));
                 map.put("brcontent",rs.getString("brcontent"));
                 map.put("brdate",rs.getString("brdate"));
                 map.put("mno",rs.getString("mno"));
 
+                // 해당 상위 댓글의 하위 댓글들도 호출하기
+                String subsql2="select * from breply where brindex = ? and bno = "+ bno;
+                ps = conn.prepareStatement(subsql2);
+                ps.setInt(1,Integer.parseInt(rs.getString("brno")));
+                    // (int) : 캐스팅 = 부모,자식관계이여야한다. - int와 String 상하관계 아니다. vs Integer.parseInt() : 형변환함수
+                    // rs 사용하면 안되는 이유 : 현재 상위 댓글 출력시 rs 사용중
+                ResultSet rs2 = ps.executeQuery();
+                List<Map<String,Object>> subList = new ArrayList<>();
+                while (rs2.next()) {
+                    Map<String, Object> submap = new HashMap<>(); // 대댓글
+                    submap.put("brno", rs2.getString("brno"));
+                    submap.put("brcontent", rs2.getString("brcontent"));
+                    submap.put("brdate", rs2.getString("brdate"));
+                    submap.put("mno", rs2.getString("mno"));
+
+                    subList.add(submap);
+                }
+                map.put("subReply",subList); // 상위 댓글 속성에 하위 댓글 리스트 대입
                 list.add(map);
             }
         }catch (Exception e){

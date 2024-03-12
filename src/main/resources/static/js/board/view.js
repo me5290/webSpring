@@ -18,6 +18,7 @@ function onView(){
         url:"/board/view.do",
         method:"get",
         data:{'bno' : bno},
+        async:false,
         success:(r)=>{
             console.log(r);
             let category = "";
@@ -50,11 +51,12 @@ function onView(){
                     }
                 }
             })
+            onReplyList();
         }
     })
 }
 
-// 3. 게시물 삭제
+// 2. 게시물 삭제
 function deleteView(){
     $.ajax({
         url:"/board/delete.do",
@@ -67,4 +69,77 @@ function deleteView(){
             }
         }
     })
+}
+
+// 3. 댓글 쓰기
+function onReplyWrite(brindex){
+    $.ajax({
+        url:'/board/reply/write.do',
+        method:'post',
+        data:{
+            bno:bno,
+            brcontent:document.querySelector(`.brcontent${brindex}`).value,
+            brindex:brindex
+        },
+        success:(r)=>{
+            console.log(r);
+            if(r){
+                alert('댓글 작성 성공');
+                onReplyList();
+            }
+        }
+    })
+}
+
+onReplyList();
+// 4. 댓글 출력 [1.현재 게시물 출력 되었을때 , 2.댓글 작성시 , 3.댓글삭제 , 4.댓글수정]
+function onReplyList(){
+    console.log('onReplyList()실행');
+    $.ajax({
+        url:'/board/reply/do',
+        method:'get',
+        data:{bno:bno},
+        success:(r)=>{
+            console.log(r);
+            let replyListBox = document.querySelector('.replyListBox');
+            let html = ``;
+            r.forEach((reply)=>{
+                html += `
+                    <div>
+                        <span>${reply.brcontent}</span>
+                        <span>${reply.mno}</span>
+                        <span>${reply.brdate}</span>
+                        <button type="button" onclick="subReplyView(${reply.brno})">답변 작성</button>
+                        <div class="subReplyBox${reply.brno}"></div>
+                        ${onSubReplyList(reply.subReply)}
+                    </div>
+                `;
+            });
+            replyListBox.innerHTML = html;
+        }
+    })
+}
+
+// 5. 답글 작성칸 생성
+function subReplyView(brno){
+    let html = `
+        <textarea class="brcontent${brno}"></textarea>
+        <button onclick="onReplyWrite(${brno})" type="button">답글 작성</button>
+    `;
+    document.querySelector(`.subReplyBox${brno}`).innerHTML = html;
+}
+
+// 6. 답글 출력
+function onSubReplyList(subReply){
+    let subHtml = ``;
+    subReply.forEach((reply)=>{
+        subHtml += `
+            <div style="margin-left:50px">
+                <span>${reply.brcontent}</span>
+                <span>${reply.mno}</span>
+                <span>${reply.brdate}</span>
+            </div>
+        `;
+    });
+    return subHtml;
 }

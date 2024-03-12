@@ -149,7 +149,7 @@ public class BoardService {
     }
 
     // 8. 댓글 출력
-    public List<Map<String ,String >> doGetReplyDo(int bno){
+    public List<Map<String ,Object >> doGetReplyDo(int bno){
         System.out.println("BoardService.doGetReplyDo");
         return boardDao.doGetReplyDo(bno);
     }
