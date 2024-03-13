@@ -72,3 +72,35 @@ create table breply(
     constraint breply_mno_fk foreign key(mno) references member(no) on update cascade on delete cascade,
     constraint breply_bno_fk foreign key(bno) references board(bno) on update cascade on delete cascade
 );
+
+# =================== 03/12 제품 DB =================== #
+# 제품 1개당 이미지 여러개 등록 : 1:여러개
+#              vs 
+# 제품 1개당 이미지 개수가 정해져 있음 [무조건 3개] 필드 3개
+# 1. 제품
+drop table if exists product;
+create table product(
+	pno int auto_increment, 					-- 제품 번호
+    pname varchar(100) not null,				-- 제품 이름
+    pprice int default 0, 						-- 제품 가격
+	pcontent varchar(255),						-- 제품 설명
+    pstate tinyint default 0, 					-- 제품 상태
+    pdate datetime default now(),       		-- 제품 등록일
+    plat varchar(30) not null,          		-- 제품 위치 경도
+    plng varchar(30) not null,           		-- 제품 위치 위도
+    mno bigint,
+    constraint product_pno_pk primary key(pno),	-- pk
+    constraint product_mno_fk foreign key(mno) references member(no) on update cascade on delete cascade
+);
+select * from product;
+
+# 2. 제품 이미지
+drop table if exists productimg;
+create table productimg(
+	pimgno int auto_increment,					-- 제품 이미지 식별번호
+    pimg varchar(255),							-- 제품 이미지 파일명
+    pno int,
+	constraint productimg_pimgno_pk primary key(pimgno),	-- pk
+    constraint productimg_pno_fk foreign key(pno) references product(pno) on update cascade on delete cascade	-- fk
+);
+select * from productimg;
