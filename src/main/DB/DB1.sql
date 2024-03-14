@@ -104,3 +104,13 @@ create table productimg(
     constraint productimg_pno_fk foreign key(pno) references product(pno) on update cascade on delete cascade	-- fk
 );
 select * from productimg;
+
+# 좋아요 테이블
+drop table if exists plike;
+create table plike(
+	mno bigint,
+    pno int,
+    constraint plike_mno_fk foreign key(mno) references member(no) on update cascade on delete cascade,
+    constraint plike_pno_fk foreign key(pno) references product(pno) on update cascade on delete cascade
+);
+select * from plike;
